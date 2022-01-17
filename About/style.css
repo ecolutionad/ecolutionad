@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #fbfcf5;
+}
+
+p {
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1rem;
+}
+
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #ffff;
+  font-size: 2.2rem;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: #353A74;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  color: #547932;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  color: #547932;
+  padding: 2rem 0;
+}
+
+#header-mobile {
+  width: 100%;
+  position: fixed;
+  background-color: #fbfcf5;
+  z-index: 1;
+}
+
+#header-mobile #top {
+  width: 100%;
+  height: 4rem;
+  background-color: #fbfcf5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header-mobile #top #after {
+  display: none;
+}
+
+#header-mobile #top i {
+  position: absolute;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: #2F4B14;
+}
+
+#header-mobile #top i:hover {
+  cursor: pointer;
+}
+
+#header-mobile #top img {
+  height: 2.5rem;
+}
+
+#header-mobile #container {
+  display: none;
+}
+
+#header-mobile #container #bottom {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+}
+
+#header-mobile #container #bottom a {
+  text-decoration: none;
+  color: #2F4B14;
+  padding: 0 0 2rem 0;
+}
+
+#header-mobile #container #bottom a:hover {
+  text-decoration: underline;
+}
+
+#first {
+  background-color: #2F4B14;
+  color: #ffff;
+  padding-top: 4rem;
+}
+
+#first #text {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#first #text h1 {
+  padding: 2rem 0;
+}
+
+#first #text hr {
+  border-bottom: 4px solid #FDD41D;
+  width: 5rem;
+}
+
+#first #text p {
+  padding: 2rem 0;
+}
+
+#nav {
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1rem;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #547932;
+  padding: 0 1rem;
+  border-right: 1px solid #2F4B14;
+}
+
+#nav li {
+  color: #2F4B14;
+  padding: 0 1rem;
+}
+
+#second {
+  padding: 2rem;
+}
+
+#second p {
+  padding: 1rem 0;
+}
+
+#second ul #display {
+  display: none;
+}
+
+#second ul li {
+  padding: 1rem 0;
+  border-top: 1px solid #C5D791;
+}
+
+#second ul li button {
+  width: 100%;
+  background-color: transparent;
+  border: 1.5px solid #2F4B14;
+  color: #2F4B14;
+  height: 3rem;
+  border-radius: 25px;
+}
+
+#third {
+  padding: 2rem;
+}
+
+#third img {
+  padding-top: 2rem;
+  width: 100%;
+}
+
+#fourth {
+  padding: 2rem;
+}
+
+#fifth {
+  padding: 2rem;
+}
+
+#fifth iframe {
+  padding-top: 2rem;
+}
+
+#footer {
+  background-color: #F1F4E8;
+  padding: 2rem;
+}
+
+#footer #text {
+  color: #547932;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1rem;
+}
+
+#footer #text li {
+  padding-top: 1rem;
+}
+
+#footer #contact {
+  font-family: "Roboto", sans-serif;
+  color: #547932;
+  padding: 2rem 0;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

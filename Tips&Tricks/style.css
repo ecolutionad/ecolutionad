@@ -143,6 +143,14 @@ li {
   width: 5rem;
 }
 
+#nature {
+  width: 60%;
+  border-radius: 50%;
+  margin-top: -10rem;
+  -webkit-transform: translate(60%, 0);
+          transform: translate(60%, 0);
+}
+
 #nav {
   font-size: 0.8rem;
   font-family: "Roboto", sans-serif;

@@ -38,7 +38,6 @@ h3 {
 h4 {
   font-family: "Roboto", sans-serif;
   color: #547932;
-  padding: 2rem 0;
 }
 
 #header-mobile {
@@ -139,7 +138,31 @@ h4 {
 
 #first #text hr {
   border-bottom: 4px solid #FDD41D;
+  width: 10rem;
+}
+
+#first #text h3 {
+  color: #ffff;
+  padding-top: 2rem;
+}
+
+#first #text p {
+  padding: 1rem 0;
+  width: 70%;
+}
+
+#first #text ul {
+  padding: 2rem 0;
+}
+
+#first #text button {
   width: 5rem;
+  background-color: transparent;
+  border: 1.5px solid #ffff;
+  color: #ffff;
+  height: 3rem;
+  border-radius: 25px;
+  margin-top: 0.5rem;
 }
 
 #nav {
@@ -162,6 +185,111 @@ h4 {
 #nav li {
   color: #2F4B14;
   padding: 0 1rem;
+}
+
+#second {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#second ul {
+  width: 100%;
+}
+
+#second ul li {
+  width: 100%;
+  background-color: #C5D791;
+  height: 17rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#second ul li h3, #second ul li #bottom {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+}
+
+#second ul li #top {
+  height: 100%;
+  width: 50%;
+  padding: 0 1rem;
+}
+
+#second ul li #top img {
+  width: 100%;
+}
+
+#third {
+  padding: 5rem 2rem;
+}
+
+#third ul {
+  padding: 2rem 0;
+}
+
+#third ul li {
+  padding: 1rem 0 1rem 1rem;
+  width: 15rem;
+  border-top: 1px solid #2F4B14;
+  border-left: 1px solid #2F4B14;
+  -o-border-image: linear-gradient(to bottom, #2F4B14 70%, rgba(0, 0, 0, 0) 30%);
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #2F4B14), color-stop(30%, rgba(0, 0, 0, 0)));
+     border-image: linear-gradient(to bottom, #2F4B14 70%, rgba(0, 0, 0, 0) 30%);
+  /* to top - at 50% transparent */
+  border-image-slice: 1;
+}
+
+#fourth {
+  padding: 4rem 2rem;
+  background-color: #FDD41D;
+}
+
+#fourth h3 {
+  padding-top: 2rem;
+}
+
+#fourth input {
+  width: 95%;
+  height: 2rem;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1rem;
+  color: #2F4B14;
+  padding: 0.5rem;
+  border-color: 5px solid #547932;
+}
+
+#fourth #send {
+  width: 100%;
+  background-color: transparent;
+  border: 1.5px solid #5234A5;
+  color: #5234A5;
+  height: 3rem;
+  border-radius: 25px;
 }
 
 #footer {

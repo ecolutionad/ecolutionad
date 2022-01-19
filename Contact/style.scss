@@ -24,6 +24,7 @@ p{
     font-size: $normal-font;
     font-family: $roboto;
     line-height: 1rem;
+    color: $dark-green;
 }
 h1{
     font-family: $barlow;
@@ -43,8 +44,7 @@ h3{
 }
 h4{
     font-family: $roboto;
-    color: $normal-green;
-    padding: 2rem 0;
+    color: $dark-green;
 }
 
 
@@ -96,9 +96,7 @@ h4{
     }
 }
 #first{
-    background-color: $dark-green;
-    color: #ffff;
-    padding-top: 4rem;
+    padding: 4rem 0;
     #text{
         padding: 2rem;
         display: flex;
@@ -108,6 +106,7 @@ h4{
         text-align: center;
         h1{
             padding: 2rem 0;
+            color: $dark-green;
         }
         hr{
             border-bottom: 4px solid $yellow;
@@ -133,6 +132,62 @@ h4{
     }
 }
 
+#second{
+    background-color: $yellow;
+    #text{
+        padding: 3rem 2rem;
+        line-height: 2rem;
+        #name{
+            padding-top: 1rem;
+        }
+    }
+}
+#third{
+    padding: 3rem 2rem;
+    list-style-type: none;
+    li{
+        padding-top: 1.5rem;
+        a{
+            color: $normal-green;
+        }
+    }
+}
+#fourth{
+    padding: 0 2rem 7rem 2rem;
+
+    label{
+        font-family: $barlow;
+        color: $normal-green;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+    input{
+        width: 95%;
+        height: 2rem;
+        font-size: 1.2rem;
+        font-family: $roboto;
+        line-height: 1rem;
+        color: $dark-green;
+        padding: 0.5rem;
+        border-color: 5px solid $normal-green;
+    }
+    textarea{
+        width: 95%;
+        font-size: 1.2rem;
+        font-family: $roboto;
+        line-height: 1rem;
+        color: $dark-green;
+        padding: 0.5rem;
+    }
+    #send{
+        width: 100%;
+        background-color: transparent;
+        border: 1.5px solid $normal-green;
+        color: $normal-green;
+        height: 3rem;
+        border-radius: 25px;
+    }
+}
 
 //MAIN
 #footer{

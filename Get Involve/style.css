@@ -167,8 +167,14 @@ h4 {
 }
 
 .button1:hover {
-  background-color: #9BE196;
-  color: black;
+  background-color: #C5D791;
+  color: #2F4B14;
+}
+
+.button2 {
+  background-color: #C5D791;
+  color: #2F4B14;
+  border: none;
 }
 
 #nav {

@@ -10,6 +10,10 @@ $roboto:'Roboto', sans-serif;;
 $barlow:'Barlow Condensed', sans-serif;
 
 $normal-font: 0.8rem;
+$h1: 2.2rem;
+$normal-font-word-spacing: 3px;
+$normal-font-line-height:150%;
+
 *{
     padding:0;
     margin:0;
@@ -99,6 +103,33 @@ li{
         }
     }
 }
+#header-laptop{
+    width: 100%;
+    position: fixed;
+    background-color: $background-color;
+    z-index: 1;
+    height: 6rem !important;
+    display: flex;
+    #top{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    img{
+        height: 4.5rem;
+    }
+    #nav{
+        position: absolute;
+        right: 2rem;
+        a{
+            text-decoration: none;
+            color: $dark-green;
+            padding-left: 1rem;
+        }
+    }
+    display: none;
+}
 #first{
     background-color: $dark-green;
     color: #ffff;
@@ -108,8 +139,6 @@ li{
         display: flex;
         flex-direction: column;    
         justify-content: center;
-        //align-items: center;
-        //text-align: center;
         h1{
             padding: 2rem 0;
         }
@@ -143,17 +172,18 @@ li{
     }
 }
 #second{
-    padding: 2rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    p{
-        padding: 1rem;
+    width: 100vw;
+    #cover{
+        width: 90%;
     }
     #graphic{
         display: flex;
-        width: 100%;
+        width: 90%;
         padding: 2rem;
         li{
             justify-content: center;
@@ -177,26 +207,27 @@ li{
 }
 #third{
     padding: 2rem;
-    iframe{
-        padding-top: 1rem;
-    }
+    height: auto;
 }
 #fourth{
     padding: 2rem;
-    #cover{
-        padding-top: 1rem;
+    p{
+        padding: 1rem 0;
+    }
+    ul{
         #display{
             display: none;
         }
-        #out{
+        li{
             padding: 1rem 0;
             border-top: 1px solid $light-green;
-            ul{
-                overflow-x:unset;
-                padding: 1rem 2rem;
-                li{
-                    list-style-type: disc;
-                }
+            button{
+                width: 100%;
+                background-color: transparent;
+                border: 1.5px solid $dark-green;
+                color: $dark-green;
+                height: 3rem;
+                border-radius: 25px;
             }
         }
     }
@@ -224,3 +255,121 @@ li{
         text-decoration: underline;
     }
 }
+
+@media only screen and (min-width: 300px){
+    $normal-font: 1rem;
+    p{
+        font-size: $normal-font ;
+    }
+    h1{
+        font-size: 3rem !important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    $h1: 3rem;
+    $h3: 2rem;
+    $normal-font: 1.1rem;
+    $normal-font-word-spacing: 2px;
+    $normal-font-line-height:110%;
+
+    h1{
+        font-size: $h1 !important;
+    }
+    h2{
+        font-size: $h3 !important;
+    }
+    p{
+        font-size: $normal-font;
+        letter-spacing: $normal-font-word-spacing;
+        line-height: $normal-font-line-height;
+    }
+    #nature{
+        width: 25rem !important;
+        margin-left: 20vw !important;
+    }
+    #second{
+        #cover{
+            width: 35rem;
+        }
+    }
+    #fourth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #container{
+            width: 40rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    $h1: 4rem;
+    $h3: 2rem;
+    $normal-font: 1.2rem;
+
+    h2{
+        font-size: $h3 !important;
+    }
+
+    p{
+        font-size: $normal-font;
+        word-spacing: $normal-font-word-spacing;
+        line-height: $normal-font-line-height;
+    }
+
+    #header-mobile{
+        #top{
+            height: 6rem;
+            img{
+                height: 4.5rem;
+            }
+            i{
+                font-size: 2.7rem;
+            }
+        }
+        
+    }
+    #first{
+        padding: 10rem 0;
+    }
+    #nature{
+        width: 50vw !important;
+        position: absolute !important;
+        margin-left: 0!important;
+        left: 50vw;
+        transform: translate(-50% ,-20%);
+    }
+    #second{
+        padding-top: 20rem;
+        #cover{
+            width: 50rem;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1100px){
+    $h1: 4rem;
+
+    #header-mobile{
+        display:none;
+    }
+    #header-laptop{
+        display: block;
+    }
+    #first{
+        #text{
+            padding-left: 20vw !important;
+        }
+    }
+    #nature{
+        width: 35rem !important;
+    }
+    #fourth{
+        #container{
+            width: 90vw !important;
+        }
+    }
+}
+

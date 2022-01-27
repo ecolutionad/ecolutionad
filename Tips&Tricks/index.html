@@ -31,6 +31,7 @@
             <a href="../Home/index.html"><img src="../picture/logo.png" alt="logo"></a>
             <i onclick="dropDown()" id="before" class="fas fa-bars"></i>
             <i onclick="goUp()" id="after" class="fas fa-circle-notch"></i>
+
         </div>
 
         <div id="container">
@@ -41,7 +42,17 @@
                 <a href="../Contact/index.html">CONTACT</a>
             </div>
         </div>
-
+    </div>
+    <div id="header-laptop">
+        <div id="top">
+            <a href="/Home/index.html"><img src="../picture/logo.png" alt="logo"></a>
+            <div id="nav">
+                <a href="../About/index.html">ABOUT</a>
+                <a href="../Tips&Tricks/index.html">TIPS & TRICKS</a>
+                <a href="../Get Involve/index.html">GET INVOLVED</a>
+                <a href="../Contact/index.html">CONTACT</a>
+            </div>
+        </div>
     </div>
 
     <div id="first">
@@ -60,82 +71,128 @@
     </ul>
 
     <div id="second">
-        <h2>How It Works</h2>
-        <p>Solving climate change requires reducing carbon emissions. When you offset your footprint, you neutralize your emissions by protecting forests that absorb carbon from the atmosphere.</p>
-        <ul id="graphic">
-            <li>
-                <img src="../picture/tip/calculate.png" alt="calculate">
-                <p>Calculate your footprint</p>
-            </li>
-            <li><i class="fas fa-plus"></i></li>
-            <li>
-                <img src="../picture/tip/work.png" alt="work">
-                <p>Reduce your footprint</p>
-            </li>
-            <li><i class="fas fa-equals"></i></li>
-            <li>
-                <img src="../picture/tip/result.png" alt="result">
-                <p>Solving climate change by doing it together</p>
-            </li>
-        </ul>
+        <div id="cover">
+
+            <h2>How It Works</h2>
+            <p>Solving climate change requires reducing carbon emissions. When you offset your footprint, you neutralize your emissions by protecting forests that absorb carbon from the atmosphere.</p>
+            <ul id="graphic">
+                <li>
+                    <img src="../picture/tip/calculate.png" alt="calculate">
+                    <p>Calculate your footprint</p>
+                </li>
+                <li><i class="fas fa-plus"></i></li>
+                <li>
+                    <img src="../picture/tip/work.png" alt="work">
+                    <p>Reduce your footprint</p>
+                </li>
+                <li><i class="fas fa-equals"></i></li>
+                <li>
+                    <img src="../picture/tip/result.png" alt="result">
+                    <p>Solving climate change by doing it together</p>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div id="third">
-        <h2>Calculator</h2>
-        <iframe width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" src="https://calculator.carbonfootprint.com/calculator.aspx"></iframe>
+        <div class="open-container">
+            <div id="body_open_container">
+                <script src="https://tnc-coolclimate-calculator-ui.firebaseapp.com/assets/widget.min.js"></script>
+            <p><style type="text/css">
+            .container {
+                float: none;
+                text-align: center !important;
+            padding-left:0 !important;
+            }
+            #cc_calculator_ui #cc_nav div:first-child {
+                margin-left: 0px !important;
+            }
+            #calc-wrapper { margin: auto; width: 80%; padding: 0; }
+            #cta-wrapper { float: right; width: 20%; padding: 0; }
+            #calc-wrapper:before, #calc-wrapper:after, #cta-wrapper:before, #cta-wrapper:after { content: ""; display: table; }
+            #iframe { max-width: 1000px; }
+            @media only screen and (max-width: 768px) {
+              #calc-wrapper, #cta-wrapper { float: none; width: 100%; padding: 0; }
+              #cta-wrapper { margin-top:20px; }
+            }
+            </style></p>
+            <div id="calc-wrapper">
+                <div id="widget_goes_here">&nbsp;<iframe src="https://tnc-coolclimate-calculator-ui.firebaseapp.com?utm_source=nature.org&amp;utm_medium=iframe&amp;utm_campaign=carboncalculator" id="cc-calculator" frameborder="0" scrolling="no" style="width: 1px; min-width: 100%; overflow: hidden; height: 00px;" data-gtm-yt-inspected-1_19="true"></iframe></div>
+                </div>
+                <script>
+                new window.Widget({
+                   url: 'https://tnc-coolclimate-calculator-ui.firebaseapp.com',
+                   width: '100%',
+                   container_id: 'widget_goes_here',
+                   source: 'nature.org',
+                   campaign: 'carboncalculator',
+                   user_platform: false,
+                   banner_url: "https://clipartion.com/wp-content/uploads/2016/03/green-banner-transparent-png-image.png",
+                   banner_style: {'maxHeight': '0px'},
+                 });
+                </script>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                </div>
+            </div>
+        <!--
+        <iframe width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" src="https://calculator.carbonfootprint.com/calculator.aspx"></iframe>-->
     </div>
 
     <div id="fourth">
-        <h2 id="title">Reduce your Carbon</h2>
+        <div id="container">
+            <h2 id="title">Reduce your Carbon</h2>
 
-        <ul id="cover">
-            <li id="out">
-                <h3>+ Food</h3>
+            <ul id="cover">
+                <li id="out">
+                    <h3>+ Food</h3>
+                        <div id="display">
+                            <ul>
+                                <li>Consume local and seasonal products (forgetstrawberries in winter)</li>
+                                <li>Limit meat consumption, especially beef</li>
+                                <li>Select fish from sustainable fishing</li>
+                                <li>Bring reusable shopping bags and avoid products with excessive plastic packaging</li>
+                                <li>Make sure to buy only what you need, to avoid waste</li>
+                            </ul>
+                        </div>
+                </li>
+                <li id="out">
+                    <h3>+ Clothing</h3>
                     <div id="display">
                         <ul>
-                            <li>Consume local and seasonal products (forgetstrawberries in winter)</li>
-                            <li>Limit meat consumption, especially beef</li>
-                            <li>Select fish from sustainable fishing</li>
-                            <li>Bring reusable shopping bags and avoid products with excessive plastic packaging</li>
-                            <li>Make sure to buy only what you need, to avoid waste</li>
+                            <li>Take good care of your clothes</li>
+                            <li>Try swapping, borrowing, renting or buying second-hand</li>
+                            <li>Buy responsibly-made clothes, e.g. made from recycled material or with an eco-label</li>
                         </ul>
                     </div>
-            </li>
-            <li id="out">
-                <h3>+ Clothing</h3>
-                <div id="display">
-                    <ul>
-                        <li>Take good care of your clothes</li>
-                        <li>Try swapping, borrowing, renting or buying second-hand</li>
-                        <li>Buy responsibly-made clothes, e.g. made from recycled material or with an eco-label</li>
-                    </ul>
-                </div>
-            </li>
-            <li id="out">
-                <h3>+ Transport</h3>
-                <div id="display">
-                    <ul>
-                        <li>Cycle or use public transport</li>
-                        <li>Be smart about when and how you drive</li>
-                        <li>Try the train for your next holiday</li>
-                    </ul>
-                </div>
-            </li>
-            <li id="out">
-                <h3>+ Energy and waste</h3>
-                <div id="display">
-                    <ul>
-                        <li>Turn down the heating by 1°, it will already make a difference                        </li>
-                        <li>Take short showers                         </li>
-                        <li>Turn off the water while you brush your teeth or clean the dishes                        </li>
-                        <li>Unplug your electronic equipment and don’t leave your phone on charge when the battery is already full</li>
-                        <li>Don’t store unnecessary data in the cloud </li>
-                        <li>Select energy efficient products with an “A” label</li>
-                        <li>Limit and recycle your waste</li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
+                </li>
+                <li id="out">
+                    <h3>+ Transport</h3>
+                    <div id="display">
+                        <ul>
+                            <li>Cycle or use public transport</li>
+                            <li>Be smart about when and how you drive</li>
+                            <li>Try the train for your next holiday</li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="out">
+                    <h3>+ Energy and waste</h3>
+                    <div id="display">
+                        <ul>
+                            <li>Turn down the heating by 1°, it will already make a difference</li>
+                            <li>Take short showers</li>
+                            <li>Turn off the water while you brush your teeth or clean the dishes</li>
+                            <li>Unplug your electronic equipment and don’t leave your phone on charge when the battery is already full</li>
+                            <li>Don’t store unnecessary data in the cloud </li>
+                            <li>Select energy efficient products with an “A” label</li>
+                            <li>Limit and recycle your waste</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
     </div>
 
     <div id="footer">

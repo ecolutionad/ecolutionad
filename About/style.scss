@@ -9,7 +9,12 @@ $background-color:#fbfcf5;
 $roboto:'Roboto', sans-serif;;
 $barlow:'Barlow Condensed', sans-serif;
 
+
 $normal-font: 0.8rem;
+$h1: 2.2rem;
+$normal-font-word-spacing: 3px;
+$normal-font-line-height:150%;
+
 *{
     padding:0;
     margin:0;
@@ -95,10 +100,53 @@ h4{
         }
     }
 }
+#header-laptop{
+    width: 100%;
+    position: fixed;
+    background-color: $background-color;
+    z-index: 1;
+    height: 6rem !important;
+    display: flex;
+    #top{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    img{
+        height: 4.5rem;
+    }
+    #nav{
+        position: absolute;
+        right: 2rem;
+        a{
+            text-decoration: none;
+            color: $dark-green;
+            padding-left: 1rem;
+        }
+    }
+    display: none;
+}
 #first{
     background-color: $dark-green;
     color: #ffff;
     padding-top: 4rem;
+    #cover{
+        width: 120vw;
+        //background-color: #2F4B14;
+        position: absolute;
+        right: 0%;
+        top: 0rem;
+        z-index: 0.1;
+        transform: scale(-1);
+    }
+    #pattern{
+        height: 25rem;
+        background-color: transparent;
+        opacity: 0.1;
+        background-size: 18px 18px;
+        background-image: repeating-linear-gradient(45deg, #C5D791 0, #C5D791 1.5px, transparent 0, transparent 50%);
+    }
     #text{
         padding: 2rem;
         display: flex;
@@ -160,13 +208,22 @@ h4{
 }
 #third{
     padding: 2rem;
-    img{
-        padding-top: 2rem;
+    position: relative;
+    height: auto;
+    #square{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color:$background-color;
+        height: 10rem;
         width: 100%;
     }
 }
 #fourth{
-    padding: 2rem;
+    padding: 0 2rem;
+    position: relative;
+    top: -5rem;
+    z-index: 0.1;
 }
 #fifth{
     padding: 2rem;
@@ -193,5 +250,118 @@ h4{
         color: $normal-green;
         padding: 2rem 0;
         text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: 300px){
+    $normal-font: 1rem;
+    p{
+        font-size: $normal-font ;
+    }
+    h1{
+        font-size: 3rem !important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    $h1: 3rem;
+    $h3: 2rem;
+    $normal-font: 1.1rem;
+    $normal-font-word-spacing: 2px;
+    $normal-font-line-height:110%;
+
+    h1{
+        font-size: $h1 !important;
+    }
+    h2{
+        font-size: $h3 !important;
+    }
+    p{
+        font-size: $normal-font;
+        letter-spacing: $normal-font-word-spacing;
+        line-height: $normal-font-line-height;
+    }
+    #first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #text{
+            width: 40rem;
+        }
+    }
+    #second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #container{
+            width: 40rem;
+        }
+    }
+    #third{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2, #cover{
+            width: 40rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    $h1: 4rem;
+    $h3: 2rem;
+    $normal-font: 1.2rem;
+
+    h2{
+        font-size: $h3 !important;
+    }
+
+    p{
+        font-size: $normal-font;
+        word-spacing: $normal-font-word-spacing;
+        line-height: $normal-font-line-height;
+    }
+
+    #header-mobile{
+        #top{
+            height: 6rem;
+            img{
+                height: 4.5rem;
+            }
+            i{
+                font-size: 2.7rem;
+            }
+        }
+        
+    }
+    #first{
+        padding: 5rem 0;
+        background-image: url(../picture/about-background.png);
+        #cover{
+            display: none;
+        }
+    }
+
+    
+}
+
+@media only screen and (min-width: 1100px){
+    $h1: 4rem;
+
+    #header-mobile{
+        display:none;
+    }
+    #header-laptop{
+        display: block;
+    }
+    #first{
+        justify-content: center;
+        height: 100vh;
+        padding: 0;
+    }
+    #second{
+        #container{
+            width: 90vw !important;
+        }
     }
 }

@@ -109,10 +109,69 @@ h4 {
   text-decoration: underline;
 }
 
+#header-laptop {
+  width: 100%;
+  position: fixed;
+  background-color: #fbfcf5;
+  z-index: 1;
+  height: 6rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+#header-laptop #top {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header-laptop img {
+  height: 4.5rem;
+}
+
+#header-laptop #nav {
+  position: absolute;
+  right: 2rem;
+}
+
+#header-laptop #nav a {
+  text-decoration: none;
+  color: #2F4B14;
+  padding-left: 1rem;
+}
+
 #first {
   background-color: #2F4B14;
   color: #ffff;
   padding-top: 4rem;
+}
+
+#first #cover {
+  width: 120vw;
+  position: absolute;
+  right: 0%;
+  top: 0rem;
+  z-index: 0.1;
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
+}
+
+#first #pattern {
+  height: 25rem;
+  background-color: transparent;
+  opacity: 0.1;
+  background-size: 18px 18px;
+  background-image: repeating-linear-gradient(45deg, #C5D791 0, #C5D791 1.5px, transparent 0, transparent 50%);
 }
 
 #first #text {
@@ -196,15 +255,24 @@ h4 {
 
 #third {
   padding: 2rem;
+  position: relative;
+  height: auto;
 }
 
-#third img {
-  padding-top: 2rem;
+#third #square {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fbfcf5;
+  height: 10rem;
   width: 100%;
 }
 
 #fourth {
-  padding: 2rem;
+  padding: 0 2rem;
+  position: relative;
+  top: -5rem;
+  z-index: 0.1;
 }
 
 #fifth {
@@ -236,5 +304,119 @@ h4 {
   color: #547932;
   padding: 2rem 0;
   text-decoration: underline;
+}
+
+@media only screen and (min-width: 300px) {
+  p {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+  h2 {
+    font-size: 2rem !important;
+  }
+  p {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    line-height: 110%;
+  }
+  #first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #first #text {
+    width: 40rem;
+  }
+  #second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #second #container {
+    width: 40rem;
+  }
+  #third {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #third h2, #third #cover {
+    width: 40rem;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  h2 {
+    font-size: 2rem !important;
+  }
+  p {
+    font-size: 1.2rem;
+    word-spacing: 3px;
+    line-height: 150%;
+  }
+  #header-mobile #top {
+    height: 6rem;
+  }
+  #header-mobile #top img {
+    height: 4.5rem;
+  }
+  #header-mobile #top i {
+    font-size: 2.7rem;
+  }
+  #first {
+    padding: 5rem 0;
+    background-image: url(../picture/about-background.png);
+  }
+  #first #cover {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #header-mobile {
+    display: none;
+  }
+  #header-laptop {
+    display: block;
+  }
+  #first {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+    padding: 0;
+  }
+  #second #container {
+    width: 90vw !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

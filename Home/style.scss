@@ -3,6 +3,7 @@ $normal-green: #547932;
 $dark-green: #2F4B14;
 $purple: #31387A;
 $yellow: #FBB84D;
+$light-purple: #AE8BDD;
 $background-color:#fbfcf5;
 
 $roboto:'Roboto', sans-serif;;
@@ -207,9 +208,15 @@ h3{
             color: #ffff;
             height: 3rem;
             border-radius: 25px;
+            transition-duration: 0.4s
             //align-items: center;
         }
-
+        button:hover{
+            cursor: pointer;
+            background-color: $light-purple;
+            color: $purple;
+            border: none;
+        }
         #outsider{
             position: relative;
             width: 90vw;

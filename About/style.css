@@ -256,6 +256,15 @@ h4 {
   color: #2F4B14;
   height: 3rem;
   border-radius: 25px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#second ul li button:hover {
+  cursor: pointer;
+  background-color: #C5D791;
+  color: #2F4B14;
+  border: none;
 }
 
 #third {

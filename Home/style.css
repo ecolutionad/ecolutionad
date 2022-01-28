@@ -763,4 +763,13 @@ h3 {
     height: 40vw !important;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  #footer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

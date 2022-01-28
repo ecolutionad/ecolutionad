@@ -192,7 +192,7 @@ li {
           transform: translate(60%, 0);
 }
 
-#nav {
+#navbar {
   font-size: 0.8rem;
   font-family: "Roboto", sans-serif;
   line-height: 1rem;
@@ -202,14 +202,14 @@ li {
   display: flex;
 }
 
-#nav a {
+#navbar a {
   text-decoration: none;
   color: #547932;
   padding: 0 1rem;
   border-right: 1px solid #2F4B14;
 }
 
-#nav li {
+#navbar li {
   color: #2F4B14;
   padding: 0 1rem;
 }
@@ -284,14 +284,15 @@ li {
 
 #fourth ul #display {
   display: none;
+  padding-left: 2rem;
 }
 
-#fourth ul li {
+#fourth ul #out {
   padding: 1rem 0;
   border-top: 1px solid #C5D791;
 }
 
-#fourth ul li button {
+#fourth ul #out button {
   width: 100%;
   background-color: transparent;
   border: 1.5px solid #2F4B14;
@@ -300,9 +301,27 @@ li {
   border-radius: 25px;
 }
 
+#fourth li {
+  list-style-type: disc;
+}
+
+#fourth h3:hover {
+  cursor: pointer;
+  color: #2F4B14;
+}
+
 #footer {
   background-color: #F1F4E8;
   padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #footer #text {
@@ -316,11 +335,21 @@ li {
   padding-top: 1rem;
 }
 
-#footer #contact {
+#footer #contact h2 {
   font-family: "Roboto", sans-serif;
-  color: #547932;
-  padding: 2rem 0;
+  color: #547932 !important;
+  padding: 3rem 0 2rem 0;
   text-decoration: underline;
+}
+
+#footer #contact #media a {
+  color: #C5D791;
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+
+#footer #contact #media a:hover {
+  color: #547932;
 }
 
 @media only screen and (min-width: 300px) {
@@ -385,6 +414,43 @@ li {
   }
   #header-mobile #top i {
     font-size: 2.7rem;
+  }
+  #header-laptop {
+    text-decoration: none !important;
+    width: 100%;
+    position: fixed;
+    background-color: #fbfcf5;
+    z-index: 1;
+    height: 6rem !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: none;
+  }
+  #header-laptop #top {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header-laptop img {
+    height: 4.5rem;
+  }
+  #header-laptop #nav {
+    position: absolute;
+    right: 2rem;
+  }
+  #header-laptop #nav a {
+    text-decoration: none;
+    color: #2F4B14;
+    padding-left: 1rem;
   }
   #first {
     padding: 10rem 0;

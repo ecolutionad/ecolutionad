@@ -288,7 +288,7 @@ h3{
             //background-color: #2F4B14;
             position: absolute;
             right: 0%;
-            bottom: 0rem;
+            bottom: 0rem; 
             z-index: 0.1;
             transform: scale(-1);
         }
@@ -353,6 +353,9 @@ h3{
 #footer{
     background-color: #F1F4E8;
     padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     #text{
         color: $normal-green;
         font-size: $normal-font;

@@ -166,7 +166,7 @@ h4{
         }
     }
 }
-#nav{
+#navbar{
     font-size: $normal-font;
     font-family: $roboto;
     line-height: 1rem;
@@ -193,6 +193,10 @@ h4{
             display: none;
         }
         li{
+            h3:hover{
+                cursor: pointer;
+                color: $dark-green
+            }
             padding: 1rem 0;
             border-top: 1px solid $light-green;
             button{
@@ -215,7 +219,8 @@ h4{
         bottom: 0;
         left: 0;
         background-color:$background-color;
-        height: 10rem;
+
+        height: 20%;
         width: 100%;
     }
 }
@@ -233,9 +238,13 @@ h4{
 }
 
 //MAIN
+//MAIN
 #footer{
     background-color: #F1F4E8;
     padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     #text{
         color: $normal-green;
         font-size: $normal-font;
@@ -246,10 +255,22 @@ h4{
         }
     }
     #contact{
-        font-family: $roboto;
-        color: $normal-green;
-        padding: 2rem 0;
-        text-decoration: underline;
+        h2{
+            font-family: $roboto;
+            color: $normal-green !important;
+            padding: 3rem 0 2rem 0;
+            text-decoration: underline;
+        }
+        #media{
+            a{
+                color: $light-green;
+                font-size: 3rem;
+                padding-right: 1rem;
+            }
+            a:hover{
+                color: $normal-green;
+            }
+        }
     }
 }
 
@@ -362,6 +383,9 @@ h4{
     #second{
         #container{
             width: 90vw !important;
+        }
+        button{
+            width: 15rem !important;
         }
     }
 }

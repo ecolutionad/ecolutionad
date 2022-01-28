@@ -154,7 +154,7 @@ li{
     margin-top: -10rem;
     transform: translate(60%,0);
 }
-#nav{
+#navbar{
     font-size: $normal-font;
     font-family: $roboto;
     line-height: 1rem;
@@ -217,8 +217,9 @@ li{
     ul{
         #display{
             display: none;
+            padding-left: 2rem;
         }
-        li{
+        #out{
             padding: 1rem 0;
             border-top: 1px solid $light-green;
             button{
@@ -231,6 +232,13 @@ li{
             }
         }
     }
+    li{
+        list-style-type: disc;
+    }
+    h3:hover{
+        cursor: pointer;
+        color: $dark-green
+    }
 }
 
 
@@ -239,6 +247,9 @@ li{
 #footer{
     background-color: #F1F4E8;
     padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     #text{
         color: $normal-green;
         font-size: $normal-font;
@@ -249,10 +260,22 @@ li{
         }
     }
     #contact{
-        font-family: $roboto;
-        color: $normal-green;
-        padding: 2rem 0;
-        text-decoration: underline;
+        h2{
+            font-family: $roboto;
+            color: $normal-green !important;
+            padding: 3rem 0 2rem 0;
+            text-decoration: underline;
+        }
+        #media{
+            a{
+                color: $light-green;
+                font-size: 3rem;
+                padding-right: 1rem;
+            }
+            a:hover{
+                color: $normal-green;
+            }
+        }
     }
 }
 
@@ -329,6 +352,34 @@ li{
             }
         }
         
+    }
+    #header-laptop{
+        text-decoration: none !important;
+        width: 100%;
+        position: fixed;
+        background-color: $background-color;
+        z-index: 1;
+        height: 6rem !important;
+        display: flex;
+        #top{
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        img{
+            height: 4.5rem;
+        }
+        #nav{
+            position: absolute;
+            right: 2rem;
+            a{
+                text-decoration: none;
+                color: $dark-green;
+                padding-left: 1rem;
+            }
+        }
+        display: none;
     }
     #first{
         padding: 10rem 0;

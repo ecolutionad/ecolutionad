@@ -215,6 +215,13 @@ h4{
         color: $normal-green;
         height: 3rem;
         border-radius: 25px;
+        transition-duration: 0.4s;
+    }
+    #send:hover{
+        cursor: pointer;
+        background-color: $normal-green;
+        color: $light-green;
+        border: none;
     }
 }
 

@@ -274,6 +274,15 @@ h3 {
   color: #ffff;
   height: 3rem;
   border-radius: 25px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#main #second button:hover {
+  cursor: pointer;
+  background-color: #AE8BDD;
+  color: #31387A;
+  border: none;
 }
 
 #main #second #outsider {

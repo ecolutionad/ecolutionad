@@ -162,6 +162,7 @@ h4{
             height: 3rem;
             border-radius: 25px;
             margin-top: 0.5rem;
+            transition-duration: 0.4s;
         }
         button:hover{
             cursor: pointer;
@@ -496,3 +497,66 @@ h4{
         flex-direction: column !important;
     }
 }
+#form{
+    padding: 2rem 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #cover{
+        width: 90%;
+    }
+    label{
+        font-family: $barlow;
+        color: $normal-green;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+    input{
+        width: 99%;
+        height: 2rem;
+        font-size: 1.2rem;
+        font-family: $roboto;
+        line-height: 1rem;
+        color: $dark-green;
+        //padding: 0.5rem;
+        border-color: 5px solid $normal-green;
+    }
+    textarea{
+        width: 95%;
+        font-size: 1.2rem;
+        font-family: $roboto;
+        line-height: 1rem;
+        color: $dark-green;
+        padding: 0.5rem;
+    }
+    #send{
+        width: 99%;
+        background-color: transparent;
+        border: 1.5px solid $normal-green;
+        color: $normal-green;
+        height: 3rem;
+        border-radius: 25px;
+        transition-duration: 0.4s;
+    }
+    #send:hover{
+        cursor: pointer;
+        background-color: $normal-green;
+        color: $light-green;
+        border: none;
+    }
+}
+#text{
+    font-family: $barlow;
+    color: $normal-green;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+#amount{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+

@@ -206,6 +206,13 @@ h4{
                 color: $dark-green;
                 height: 3rem;
                 border-radius: 25px;
+                transition-duration: 0.4s;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: #C5D791;
+                color: $dark-green;
+                border: none;
             }
         }
     }

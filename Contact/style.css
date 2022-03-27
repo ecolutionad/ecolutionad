@@ -272,6 +272,15 @@ h4 {
   color: #547932;
   height: 3rem;
   border-radius: 25px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#fourth #send:hover {
+  cursor: pointer;
+  background-color: #547932;
+  color: #C5D791;
+  border: none;
 }
 
 #footer {

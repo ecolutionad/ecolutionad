@@ -28,7 +28,7 @@ body{
 p{
     font-size: $normal-font;
     font-family: $roboto;
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
 h1{
     font-family: $barlow;
@@ -128,27 +128,11 @@ h4{
     display: none;
 }
 #first{
-    background-color: $dark-green;
-    color: #ffff;
+    color: $dark-green;
     padding-top: 4rem;
-    #cover{
-        width: 120vw;
-        //background-color: #2F4B14;
-        position: absolute;
-        right: 0%;
-        top: 0rem;
-        z-index: 0.1;
-        transform: scale(-1);
-    }
-    #pattern{
-        height: 25rem;
-        background-color: transparent;
-        opacity: 0.1;
-        background-size: 18px 18px;
-        background-image: repeating-linear-gradient(45deg, #C5D791 0, #C5D791 1.5px, transparent 0, transparent 50%);
-    }
+    overflow-y: hidden;
     #text{
-        padding: 2rem;
+        padding: 2rem 4rem;
         display: flex;
         flex-direction: column;    
         justify-content: center;
@@ -156,32 +140,35 @@ h4{
         text-align: center;
         h1{
             padding: 2rem 0;
+            color: $dark-green;
         }
         hr{
-            border-bottom: 4px solid $yellow;
             width: 5rem;
         }
         p{
             padding: 2rem 0;
         }
+        #button{
+            background-color: #2F4B14;
+            color: #ffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+        }
+        #button:hover{
+            background-color: $light-green;
+            color: $dark-green;
+        }
     }
 }
-#navbar{
-    font-size: $normal-font;
-    font-family: $roboto;
-    line-height: 1rem;
-    padding: 1rem 0;
-    display: flex;
-    a{
-        text-decoration: none;
-        color: $normal-green;
-        padding: 0 1rem;
-        border-right: 1px solid $dark-green;
+#picture{
+    width: 100vw;
+    img{
+        width: 100%;
     }
-    li{
-        color: $dark-green;
-        padding: 0 1rem;
+    #tree{
+        margin-top: -45%;
     }
+
 }
 #second{
     padding: 2rem;
@@ -296,7 +283,7 @@ h4{
     $h3: 2rem;
     $normal-font: 1.1rem;
     $normal-font-word-spacing: 2px;
-    $normal-font-line-height:110%;
+    $normal-font-line-height:1.8;
 
     h1{
         font-size: $h1 !important;
@@ -362,19 +349,10 @@ h4{
         }
         
     }
-    #first{
-        padding: 5rem 0;
-        background-image: url(../picture/about-background.png);
-        #cover{
-            display: none;
-        }
-    }
-
-    
 }
 
 @media only screen and (min-width: 1100px){
-    $h1: 4rem;
+    $h1: 5rem;
 
     #header-mobile{
         display:none;
@@ -384,8 +362,7 @@ h4{
     }
     #first{
         justify-content: center;
-        height: 100vh;
-        padding: 0;
+        padding-top: 7rem;
     }
     #second{
         #container{

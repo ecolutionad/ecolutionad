@@ -13,7 +13,7 @@ body {
 p {
   font-size: 0.8rem;
   font-family: "Roboto", sans-serif;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -151,31 +151,13 @@ h4 {
 }
 
 #first {
-  background-color: #2F4B14;
-  color: #ffff;
+  color: #2F4B14;
   padding-top: 4rem;
-}
-
-#first #cover {
-  width: 120vw;
-  position: absolute;
-  right: 0%;
-  top: 0rem;
-  z-index: 0.1;
-  -webkit-transform: scale(-1);
-          transform: scale(-1);
-}
-
-#first #pattern {
-  height: 25rem;
-  background-color: transparent;
-  opacity: 0.1;
-  background-size: 18px 18px;
-  background-image: repeating-linear-gradient(45deg, #C5D791 0, #C5D791 1.5px, transparent 0, transparent 50%);
+  overflow-y: hidden;
 }
 
 #first #text {
-  padding: 2rem;
+  padding: 2rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,10 +176,10 @@ h4 {
 
 #first #text h1 {
   padding: 2rem 0;
+  color: #2F4B14;
 }
 
 #first #text hr {
-  border-bottom: 4px solid #FDD41D;
   width: 5rem;
 }
 
@@ -205,26 +187,28 @@ h4 {
   padding: 2rem 0;
 }
 
-#navbar {
-  font-size: 0.8rem;
-  font-family: "Roboto", sans-serif;
-  line-height: 1rem;
-  padding: 1rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#first #text #button {
+  background-color: #2F4B14;
+  color: #ffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
 }
 
-#navbar a {
-  text-decoration: none;
-  color: #547932;
-  padding: 0 1rem;
-  border-right: 1px solid #2F4B14;
-}
-
-#navbar li {
+#first #text #button:hover {
+  background-color: #C5D791;
   color: #2F4B14;
-  padding: 0 1rem;
+}
+
+#picture {
+  width: 100vw;
+}
+
+#picture img {
+  width: 100%;
+}
+
+#picture #tree {
+  margin-top: -45%;
 }
 
 #second {
@@ -358,7 +342,7 @@ h4 {
   p {
     font-size: 1.1rem;
     letter-spacing: 2px;
-    line-height: 110%;
+    line-height: 1.8;
   }
   #first {
     display: -webkit-box;
@@ -425,13 +409,6 @@ h4 {
   #header-mobile #top i {
     font-size: 2.7rem;
   }
-  #first {
-    padding: 5rem 0;
-    background-image: url(../picture/about-background.png);
-  }
-  #first #cover {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -445,8 +422,7 @@ h4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100vh;
-    padding: 0;
+    padding-top: 7rem;
   }
   #second #container {
     width: 90vw !important;

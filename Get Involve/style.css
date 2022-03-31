@@ -415,7 +415,7 @@ h4 {
   p {
     font-size: 1.1rem;
     letter-spacing: 2px;
-    line-height: 110%;
+    line-height: 1.7;
   }
   #second {
     display: -webkit-box;
@@ -522,7 +522,7 @@ h4 {
   p {
     font-size: 1.2rem;
     word-spacing: 3px;
-    line-height: 150%;
+    line-height: 1.5;
   }
   #header-mobile #top {
     height: 6rem;

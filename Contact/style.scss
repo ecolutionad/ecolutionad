@@ -12,7 +12,7 @@ $barlow:'Barlow Condensed', sans-serif;
 $normal-font: 0.8rem;
 $h1: 2.2rem;
 $normal-font-word-spacing: 3px;
-$normal-font-line-height:150%;
+$normal-font-line-height:1.5;
 
 *{
     padding:0;
@@ -276,7 +276,7 @@ h4{
     $h3: 2rem;
     $normal-font: 1.1rem;
     $normal-font-word-spacing: 2px;
-    $normal-font-line-height:110%;
+    $normal-font-line-height:1.7;
 
     h1{
         font-size: $h1 !important;

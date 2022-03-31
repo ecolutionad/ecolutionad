@@ -12,7 +12,7 @@ $barlow:'Barlow Condensed', sans-serif;
 $normal-font: 0.8rem;
 $h1: 2.2rem;
 $normal-font-word-spacing: 3px;
-$normal-font-line-height:150%;
+$normal-font-line-height:1.5;
 
 *{
     padding:0;
@@ -40,7 +40,7 @@ h3{
     width: 100%;
     position: fixed;
     background-color: $background-color;
-    z-index: 1;
+    z-index: 5;
     #top{
         width: 100%;
         height: 4rem;
@@ -87,7 +87,7 @@ h3{
     width: 100%;
     position: fixed;
     background-color: $background-color;
-    z-index: 1;
+    z-index: 5;
     height: 6rem !important;
     display: flex;
     #top{
@@ -119,6 +119,15 @@ h3{
         flex-direction: column;
         align-items: center;
         padding: 0 2rem;
+        .underline{
+            padding-top: 0 !important;
+        }
+        .underline:hover{
+            text-decoration: underline;
+            animation: underline infinite;
+            animation-duration: 1s;
+        }
+
         h1{
             padding-top: 2rem;
             font-family: $barlow;
@@ -185,8 +194,6 @@ h3{
             100% {transform: translateX(-50%);}
         }
     }
-
-
     #second{
         background-color: $purple;
         color: #ffff;
@@ -326,6 +333,87 @@ h3{
         }
     }
     #fourth{
+        display: none;
+        position: relative;
+        background-color: black;
+        height: 100vh;
+        top:0;
+        left: 0;
+        width: 100%;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+        }
+    }
+    #fourth::before{
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to top, $dark-green, transparent);
+        z-index: 1;
+    }
+    #fifth{
+        position: relative;
+        background-color: $dark-green;
+        padding: 10rem 2rem;
+        #top{
+            padding: 5rem 0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-top: solid 2px $light-green;
+            p{
+                color: $background-color;
+                width: 20rem;
+                padding-top: 2rem;
+            }
+            h3{
+                color: $light-green !important;
+            }
+        }
+        #bottom{
+            padding-top: 5rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            justify-content: center;
+            li{
+                width: 100%;
+                //height: 20rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 2rem;
+                img{
+                    width: 70%;
+                    filter: grayscale(100%);
+                }
+                .text{
+                    padding: 0.5rem 0 2rem 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .name{
+                        color: $background-color;
+                    }
+                    .job{
+                        font-family: $barlow;
+                        color: $background-color;
+                    }
+                }
+            }
+        }
+    }
+    #idk{
         padding: 0 2rem;
         #member{
             padding: 2rem 0;
@@ -407,7 +495,7 @@ h3{
     $h3: 2rem;
     $normal-font: 1.1rem;
     $normal-font-word-spacing: 2px;
-    $normal-font-line-height:110%;
+    $normal-font-line-height:1.7;
 
     h1{
         font-size: $h1 !important;
@@ -467,14 +555,12 @@ h3{
             }
         }
     }
-    #fourth{
-        #member{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        #dan, #aileen{
-            width: 30rem;
+    #fifth{
+        padding: 10rem 4rem !important;
+        #bottom{
+            li{
+                width: 30rem !important;
+            }
         }
     }
 }
@@ -582,25 +668,25 @@ h3{
             }
         }
     }
-    #fourth{
-        #dan, #aileen{
-            height: 30rem;
-            width: 50rem !important;
-            display: flex;
+    #fifth{
+        #top{
+            flex-direction: row !important;
+            p{
+                padding-top: 0 !important;
+            }
         }
-        #aileen{
-            flex-direction: row-reverse;
+        #bottom{
+            flex-direction: column;
+            justify-content: flex-start !important;
+            justify-content: space-between !important;
+            li{
+                width: 22rem !important;
+                
+                img{
+                    width: 100% !important;
+                }
+            }
         }
-        img{
-            flex: 50% !important;
-            width: auto !important;
-            height: 100% !important;
-        }
-        #text1, #text2{
-            flex: 50%;
-        }
-        
-        
     }
 }
 
@@ -639,6 +725,9 @@ h3{
             width: 40vw !important;
             height: 40vw !important;
         }
+    }
+    #fourth{
+        display: block !important;
     }
 }
 

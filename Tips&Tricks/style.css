@@ -190,6 +190,8 @@ li {
   margin-top: -10rem;
   -webkit-transform: translate(60%, 0);
           transform: translate(60%, 0);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 #navbar {
@@ -271,43 +273,56 @@ li {
 
 #third {
   padding: 2rem;
-  height: auto;
 }
 
 #fourth {
+  padding: 2rem 0;
+  width: 100vw;
+  position: relative;
+}
+
+#fourth .line {
+  display: none;
+  height: 40cm;
+  background-color: #2F4B14;
+  width: 1px;
+  position: absolute;
+  top: 14rem;
+}
+
+#fourth .line #dot {
+  height: 15px;
+  width: 15px;
+  background-color: #2F4B14;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+#fourth #cover {
+  width: 100%;
+}
+
+#fourth #cover #img {
+  width: 100%;
+}
+
+#fourth #cover #img img {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+#fourth #cover #display {
+  width: 15;
+  height: auto;
   padding: 2rem;
 }
 
-#fourth p {
-  padding: 1rem 0;
-}
-
-#fourth ul #display {
-  display: none;
-  padding-left: 2rem;
-}
-
-#fourth ul #out {
-  padding: 1rem 0;
-  border-top: 1px solid #C5D791;
-}
-
-#fourth ul #out button {
+#fourth #cover .first, #fourth #cover .second, #fourth #cover .third, #fourth #cover .fourth {
   width: 100%;
-  background-color: transparent;
-  border: 1.5px solid #2F4B14;
-  color: #2F4B14;
-  height: 3rem;
-  border-radius: 25px;
-}
-
-#fourth li {
-  list-style-type: disc;
-}
-
-#fourth h3:hover {
-  cursor: pointer;
-  color: #2F4B14;
+  padding-bottom: 4rem;
 }
 
 #footer {
@@ -380,20 +395,45 @@ li {
   #second #cover {
     width: 35rem;
   }
-  #fourth {
+  #fourth #img {
+    width: 50% !important;
+  }
+  #fourth #display {
+    width: 15rem !important;
+  }
+  #fourth .second, #fourth .fourth {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  #fourth #container {
-    width: 40rem;
+  #fourth .first, #fourth .third {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #fourth .second #display {
+    padding: 2rem 0 !important;
+    padding-left: 2rem !important;
+  }
+  #fourth .second #img {
+    padding-right: 2rem;
+  }
+  #fourth .third #img {
+    padding-left: 2rem;
   }
 }
 
@@ -469,6 +509,20 @@ li {
   #second #cover {
     width: 50rem;
   }
+  #fourth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #fourth #cover {
+    width: 80%;
+  }
+  #fourth #img {
+    width: 25rem !important;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -484,8 +538,97 @@ li {
   #nature {
     width: 35rem !important;
   }
-  #fourth #container {
-    width: 90vw !important;
+  #fourth .line {
+    display: block;
+  }
+  #fourth #cover {
+    padding: 10rem 0;
+    width: 100% !important;
+  }
+  #fourth .first {
+    position: relative;
+  }
+  #fourth .first #img {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    padding-right: 3cm;
+    width: 45vw !important;
+  }
+  #fourth .first #display {
+    position: absolute;
+    left: 50% !important;
+    top: 0;
+    padding-left: 3cm !important;
+    width: 30% !important;
+  }
+  #fourth .second {
+    position: relative;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  #fourth .second #flex2 {
+    position: relative;
+    right: 50% !important;
+    padding-right: 3.5cm !important;
+    width: 30vw !important;
+    height: 100% !important;
+  }
+  #fourth .second #flex2 #display {
+    width: 100% !important;
+  }
+  #fourth .second #img {
+    position: relative;
+    left: 50% !important;
+    top: 0;
+    padding-left: 3cm !important;
+    width: 35vw !important;
+  }
+  #fourth .third {
+    position: relative;
+  }
+  #fourth .third #img {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    padding-right: 3cm;
+    width: 35vw !important;
+  }
+  #fourth .third #display {
+    position: absolute;
+    left: 50% !important;
+    top: 0;
+    padding-left: 3cm !important;
+    width: 30% !important;
+  }
+  #fourth .fourth {
+    position: relative;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  #fourth .fourth #flex4 {
+    position: relative;
+    left: 50% !important;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    padding-right: 3.5cm !important;
+    width: 30vw !important;
+  }
+  #fourth .fourth #flex4 #display {
+    width: 100% !important;
+  }
+  #fourth .fourth #img {
+    position: absolute;
+    left: 50% !important;
+    top: 0;
+    padding-left: 3cm !important;
+    width: 45vw !important;
   }
 }
 
@@ -495,6 +638,17 @@ li {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+  }
+  #fourth #display {
+    width: 25rem;
+  }
+  #fourth .second #flex2, #fourth .second #flex4, #fourth .fourth #flex2, #fourth .fourth #flex4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 /*# sourceMappingURL=style.css.map */

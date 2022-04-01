@@ -121,11 +121,12 @@ h3{
         padding: 0 2rem;
         .underline{
             padding-top: 0 !important;
+            transition-duration: 0.4s !important;
         }
         .underline:hover{
             text-decoration: underline;
             animation: underline infinite;
-            animation-duration: 1s;
+            transition-duration: 0.4s;
         }
 
         h1{
@@ -215,7 +216,7 @@ h3{
             color: #ffff;
             height: 3rem;
             border-radius: 25px;
-            transition-duration: 0.4s
+            transition-duration: 0.4s;
             //align-items: center;
         }
         button:hover{

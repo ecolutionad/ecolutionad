@@ -153,14 +153,16 @@ h3 {
 
 #main #first .underline {
   padding-top: 0 !important;
+  -webkit-transition-duration: 0.4s !important;
+          transition-duration: 0.4s !important;
 }
 
 #main #first .underline:hover {
   text-decoration: underline;
   -webkit-animation: underline infinite;
           animation: underline infinite;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 #main #first h1 {

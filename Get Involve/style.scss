@@ -12,7 +12,7 @@ $barlow:'Barlow Condensed', sans-serif;
 $normal-font: 0.8rem;
 $h1: 2.2rem;
 $normal-font-word-spacing: 3px;
-$normal-font-line-height:1.5;
+$normal-font-line-height:150%;
 
 *{
     padding:0;
@@ -27,7 +27,7 @@ body{
 p{
     font-size: $normal-font;
     font-family: $roboto;
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
 h1{
     font-family: $barlow;
@@ -125,12 +125,13 @@ h4{
     }
     display: none;
 }
+
 #first{
-    background-color: $dark-green;
-    color: #ffff;
+    color: $dark-green;
     padding-top: 4rem;
+    overflow-y: hidden;
     #text{
-        padding: 2rem;
+        padding: 2rem 4rem;
         display: flex;
         flex-direction: column;    
         justify-content: center;
@@ -138,66 +139,36 @@ h4{
         text-align: center;
         h1{
             padding: 2rem 0;
+            color: $dark-green;
         }
         hr{
-            border-bottom: 4px solid $yellow;
-            width: 10rem;
-        }
-        h3{
-            color: #ffff;
-            padding-top: 2rem;
+            width: 5rem;
         }
         p{
-            padding: 1rem 0;
-            width: 70%;
-        }
-        ul{
             padding: 2rem 0;
         }
-        button{
-            width: 5rem;
-            background-color: transparent;
-            border: 1.5px solid #ffff;
+        #button{
+            background-color: #2F4B14;
             color: #ffff;
-            height: 3rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 25px;
-            margin-top: 0.5rem;
             transition-duration: 0.4s;
         }
-        button:hover{
-            cursor: pointer;
-            background-color: #C5D791;
-            color: $dark-green;
-            border: none;
-        }
-        .button1{
+        #button:hover{
             background-color: $light-green;
             color: $dark-green;
-            border: none;
-        }
-        .button1:hover{
-            background-color: $normal-green;
-            color: #ffff;
-            border: 1.5px solid #ffff;
         }
     }
 }
-#navbar{
-    font-size: $normal-font;
-    font-family: $roboto;
-    line-height: 1rem;
-    padding: 1rem 0;
-    display: flex;
-    a{
-        text-decoration: none;
-        color: $normal-green;
-        padding: 0 1rem;
-        border-right: 1px solid $dark-green;
+#picture{
+    width: 100vw;
+    img{
+        width: 100%;
     }
-    li{
-        color: $dark-green;
-        padding: 0 1rem;
+    #tree{
+        margin-top: -30%;
     }
+
 }
 
 
@@ -353,6 +324,14 @@ h4{
         line-height: $normal-font-line-height;
     }
 
+    #first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #text{
+            width: 40rem;
+        }
+    }
     #second{
         display: flex;
         flex-direction: column;
@@ -467,6 +446,20 @@ h4{
         }
         display: none;
     }
+    #first{
+        position: absolute !important;
+        width: 30%;
+        right: 5%;
+        #text{
+            width: 100%;
+            text-align: left;
+            justify-content: start;
+            align-items: flex-start;
+        }
+    }
+    #picture{
+        padding-top: 15rem;
+    }
     #fourth{
         padding: 7rem 0;
     }
@@ -481,6 +474,11 @@ h4{
     }
     #header-laptop{
         display: block;
+    }
+    #first{
+        justify-content: center;
+        padding-top: 7rem;
+
     }
 }
 

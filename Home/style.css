@@ -466,14 +466,14 @@ h3 {
   left: 0;
   width: 100%;
   height: 100px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#2F4B14), to(transparent));
-  background: linear-gradient(to top, #2F4B14, transparent);
+  background: -webkit-gradient(linear, left bottom, left top, from(#C5D791), to(transparent));
+  background: linear-gradient(to top, #C5D791, transparent);
   z-index: 1;
 }
 
 #main #fifth {
   position: relative;
-  background-color: #2F4B14;
+  background-color: #C5D791;
   padding: 10rem 2rem;
 }
 
@@ -489,17 +489,17 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: solid 2px #C5D791;
+  border-top: solid 2px #547932;
 }
 
 #main #fifth #top p {
-  color: #fbfcf5;
+  color: #2F4B14;
   width: 20rem;
   padding-top: 2rem;
 }
 
 #main #fifth #top h3 {
-  color: #C5D791 !important;
+  color: #547932 !important;
 }
 
 #main #fifth #bottom {
@@ -561,48 +561,12 @@ h3 {
 }
 
 #main #fifth #bottom li .text .name {
-  color: #fbfcf5;
+  color: #2F4B14;
 }
 
 #main #fifth #bottom li .text .job {
   font-family: "Barlow Condensed", sans-serif;
-  color: #fbfcf5;
-}
-
-#main #idk {
-  padding: 0 2rem;
-}
-
-#main #idk #member {
-  padding: 2rem 0;
-}
-
-#main #idk #member .frame {
-  overflow-y: hidden;
-}
-
-#main #idk #member .frame img {
-  width: 100%;
-}
-
-#main #idk #member #dan, #main #idk #member #aileen {
-  padding: 2rem 0;
-}
-
-#main #idk #member #text1 {
-  padding: 2rem;
-  background-color: #FBB84D;
-  color: #31387A;
-}
-
-#main #idk #member #text2 {
-  background-color: #2F4B14;
-  padding: 2rem;
-  color: #ffff;
-}
-
-#main #idk #member #text2 h3 {
-  color: #C5D791;
+  color: #2F4B14;
 }
 
 #footer {
@@ -906,6 +870,9 @@ h3 {
   }
   #fourth {
     display: block !important;
+  }
+  #fifth {
+    padding: 10rem 10vw !important;
   }
 }
 

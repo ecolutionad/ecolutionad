@@ -244,6 +244,7 @@ h4 {
   border-radius: 25px;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+  text-decoration: none;
 }
 
 #second ul li button:hover {
@@ -251,6 +252,12 @@ h4 {
   background-color: #C5D791;
   color: #2F4B14;
   border: none;
+  text-decoration: none;
+}
+
+#second ul li #button1 {
+  text-decoration: none;
+  color: #2F4B14;
 }
 
 #third {

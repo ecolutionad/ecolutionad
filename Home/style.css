@@ -13,7 +13,7 @@ body {
 p {
   font-size: 0.8rem;
   font-family: "Roboto", sans-serif;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 h3 {
@@ -153,16 +153,14 @@ h3 {
 
 #main #first .underline {
   padding-top: 0 !important;
-  -webkit-transition-duration: 0.4s !important;
-          transition-duration: 0.4s !important;
 }
 
 #main #first .underline:hover {
   text-decoration: underline;
   -webkit-animation: underline infinite;
           animation: underline infinite;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 #main #first h1 {
@@ -330,10 +328,10 @@ h3 {
   width: 85%;
   height: 85%;
   border-radius: 50%;
-  border-top: 2px dashed #FBB84D;
-  border-right: 2px dashed #FBB84D;
-  border-left: 2px dashed #FBB84D;
-  border-bottom: 2px dashed #FBB84D;
+  border-top: 2px dashed #EBA920;
+  border-right: 2px dashed #EBA920;
+  border-left: 2px dashed #EBA920;
+  border-bottom: 2px dashed #EBA920;
   -webkit-animation: spin 10s infinite linear;
           animation: spin 10s infinite linear;
   overflow: visible;
@@ -444,21 +442,36 @@ h3 {
 }
 
 #main #fourth {
+  background-color: #F4F0E6;
   display: none;
   position: relative;
-  background-color: black;
-  height: 100vh;
+  height: 120vh;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-#main #fourth img {
+#main #fourth #white-top {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100%;
+}
+
+#main #fourth #back, #main #fourth #front {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vw;
+}
+
+#main #fourth #sun {
+  position: absolute;
+  width: 10rem;
+  right: 30%;
+  top: 25%;
 }
 
 #main #fourth::before {
@@ -468,14 +481,13 @@ h3 {
   left: 0;
   width: 100%;
   height: 100px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#C5D791), to(transparent));
-  background: linear-gradient(to top, #C5D791, transparent);
+  background: -webkit-gradient(linear, left bottom, left top, from(#B6C186), to(transparent));
+  background: linear-gradient(to top, #B6C186, transparent);
   z-index: 1;
 }
 
 #main #fifth {
-  position: relative;
-  background-color: #C5D791;
+  background-color: #B6C186;
   padding: 10rem 2rem;
 }
 
@@ -539,10 +551,14 @@ h3 {
   padding-top: 2rem;
 }
 
-#main #fifth #bottom li img {
+#main #fifth #bottom li #img {
+  overflow-y: hidden !important;
   width: 70%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+}
+
+#main #fifth #bottom li #img img {
+  width: 100%;
+  height: 100%;
 }
 
 #main #fifth #bottom li .text {
@@ -604,7 +620,7 @@ h3 {
 }
 
 #footer #contact #media a {
-  color: #C5D791;
+  color: #B6C186;
   font-size: 3rem;
   padding-right: 1rem;
 }
@@ -816,19 +832,20 @@ h3 {
     padding-top: 0 !important;
   }
   #fifth #bottom {
+    padding: auto 5% !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
   }
   #fifth #bottom li {
     width: 22rem !important;
+  }
+  #fifth #bottom li #img {
+    height: 20rem;
   }
   #fifth #bottom li img {
     width: 100% !important;
@@ -874,7 +891,26 @@ h3 {
     display: block !important;
   }
   #fifth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
     padding: 10rem 10vw !important;
+  }
+  #fifth #top {
+    width: 60rem;
+  }
+  #fifth #bottom {
+    width: 60rem !important;
   }
 }
 

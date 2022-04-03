@@ -13,7 +13,7 @@ body {
 p {
   font-size: 0.8rem;
   font-family: "Roboto", sans-serif;
-  line-height: 1rem;
+  line-height: 1.5rem;
   color: #2F4B14;
 }
 
@@ -27,7 +27,6 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
-  color: #353A74;
 }
 
 h3 {
@@ -178,12 +177,12 @@ h4 {
 }
 
 #first #text hr {
-  border-bottom: 4px solid #FDD41D;
+  border-bottom: 4px solid #EBA920;
   width: 5rem;
 }
 
 #second #text {
-  background-color: #FDD41D;
+  background-color: #EBA920;
   padding: 3rem 2rem;
   line-height: 2rem;
 }
@@ -279,7 +278,7 @@ h4 {
 #fourth #send:hover {
   cursor: pointer;
   background-color: #547932;
-  color: #C5D791;
+  color: #B6C186;
   border: none;
 }
 
@@ -316,7 +315,7 @@ h4 {
 }
 
 #footer #contact #media a {
-  color: #C5D791;
+  color: #B6C186;
   font-size: 3rem;
   padding-right: 1rem;
 }

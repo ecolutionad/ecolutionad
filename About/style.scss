@@ -1,10 +1,11 @@
-$light-green: #C5D791;
+$light-green: #B6C186;
 $normal-green: #547932;
 $dark-green: #2F4B14;
-$purple: #5234A5;
-$blue: #353A74;
-$yellow: #FDD41D;
+$purple: #31387A;
+$yellow: #EBA920;
+$light-purple: #AE8BDD;
 $background-color:#fbfcf5;
+$light-blue: #D2E0E0;
 
 $roboto:'Roboto', sans-serif;;
 $barlow:'Barlow Condensed', sans-serif;
@@ -39,7 +40,7 @@ h1{
 h2{
     font-family: $roboto;
     font-size: 1.8rem;
-    color: $blue;
+    //color: $blue;
 }
 h3{
     font-family: $roboto;

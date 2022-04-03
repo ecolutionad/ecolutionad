@@ -26,7 +26,6 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
-  color: #353A74;
 }
 
 h3 {
@@ -196,7 +195,7 @@ h4 {
 }
 
 #first #text #button:hover {
-  background-color: #C5D791;
+  background-color: #B6C186;
   color: #2F4B14;
 }
 
@@ -239,8 +238,8 @@ h4 {
 
 #second #member #text1 {
   padding: 2rem;
-  background-color: #FDD41D;
-  color: #5234A5;
+  background-color: #EBA920;
+  color: #31387A;
 }
 
 #second #member #text1 h3 {
@@ -255,7 +254,7 @@ h4 {
 }
 
 #second #member #text2 h3 {
-  color: #C5D791;
+  color: #B6C186;
   font-size: 2.5rem;
 }
 
@@ -290,7 +289,7 @@ h4 {
 
 #fourth {
   padding: 4rem 2rem;
-  background-color: #FDD41D;
+  background-color: #EBA920;
 }
 
 #fourth h3 {
@@ -311,8 +310,8 @@ h4 {
 #fourth #send {
   width: 100%;
   background-color: transparent;
-  border: 1.5px solid #5234A5;
-  color: #5234A5;
+  border: 1.5px solid #31387A;
+  color: #31387A;
   height: 3rem;
   border-radius: 25px;
 }
@@ -350,7 +349,7 @@ h4 {
 }
 
 #footer #contact #media a {
-  color: #C5D791;
+  color: #B6C186;
   font-size: 3rem;
   padding-right: 1rem;
 }
@@ -664,7 +663,7 @@ h4 {
 #form #send:hover {
   cursor: pointer;
   background-color: #547932;
-  color: #C5D791;
+  color: #B6C186;
   border: none;
 }
 

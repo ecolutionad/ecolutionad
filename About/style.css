@@ -26,7 +26,6 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
-  color: #353A74;
 }
 
 h3 {
@@ -197,7 +196,7 @@ h4 {
 }
 
 #first #text #button:hover {
-  background-color: #C5D791;
+  background-color: #B6C186;
   color: #2F4B14;
 }
 
@@ -227,7 +226,7 @@ h4 {
 
 #second ul li {
   padding: 1rem 0;
-  border-top: 1px solid #C5D791;
+  border-top: 1px solid #B6C186;
 }
 
 #second ul li h3:hover {
@@ -323,7 +322,7 @@ h4 {
 }
 
 #footer #contact #media a {
-  color: #C5D791;
+  color: #B6C186;
   font-size: 3rem;
   padding-right: 1rem;
 }

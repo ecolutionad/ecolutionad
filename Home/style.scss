@@ -1,10 +1,12 @@
-$light-green: #C5D791;
+$light-green: #B6C186;
 $normal-green: #547932;
 $dark-green: #2F4B14;
 $purple: #31387A;
-$yellow: #FBB84D;
+$yellow: #EBA920;
 $light-purple: #AE8BDD;
 $background-color:#fbfcf5;
+$light-blue: #D2E0E0;
+$black: #3B3B3B;
 
 $roboto:'Roboto', sans-serif;;
 $barlow:'Barlow Condensed', sans-serif;
@@ -27,7 +29,7 @@ body{
 p{
     font-size: $normal-font;
     font-family: $roboto;
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
 h3{
     font-family: $barlow;
@@ -121,12 +123,11 @@ h3{
         padding: 0 2rem;
         .underline{
             padding-top: 0 !important;
-            transition-duration: 0.4s !important;
         }
         .underline:hover{
             text-decoration: underline;
             animation: underline infinite;
-            transition-duration: 0.4s;
+            animation-duration: 1s;
         }
 
         h1{
@@ -216,7 +217,7 @@ h3{
             color: #ffff;
             height: 3rem;
             border-radius: 25px;
-            transition-duration: 0.4s;
+            transition-duration: 0.4s
             //align-items: center;
         }
         button:hover{
@@ -334,20 +335,34 @@ h3{
         }
     }
     #fourth{
+        background-color: #F4F0E6;
         display: none;
         position: relative;
-        background-color: black;
-        height: 100vh;
+        height: 120vh;
         top:0;
         left: 0;
         width: 100%;
-        img{
+        #white-top{
             position: absolute;
             top: 0;
             left: 0;
             width: 100vw;
             height: 100%;
         }
+        #back, #front{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            height: 50vw;
+        }
+        #sun{
+            position: absolute;
+            width: 10rem;
+            right: 30%;
+            top: 25%;
+        }
+
     }
     #fourth::before{
         content: " ";
@@ -360,7 +375,6 @@ h3{
         z-index: 1;
     }
     #fifth{
-        position: relative;
         background-color: $light-green;
         padding: 10rem 2rem;
         #top{
@@ -388,14 +402,17 @@ h3{
             justify-content: center;
             li{
                 width: 100%;
-                //height: 20rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 padding-top: 2rem;
-                img{
+                #img{
+                    overflow-y: hidden !important;
                     width: 70%;
-                    filter: grayscale(100%);
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
                 .text{
                     padding: 0.5rem 0 2rem 0;
@@ -648,12 +665,14 @@ h3{
             }
         }
         #bottom{
+            padding: auto 5% !important;
             flex-direction: column;
-            justify-content: center !important;
             justify-content: space-between !important;
             li{
                 width: 22rem !important;
-                
+                #img{
+                    height: 20rem;
+                }
                 img{
                     width: 100% !important;
                 }
@@ -702,7 +721,17 @@ h3{
         display: block !important;
     }
     #fifth{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
         padding: 10rem 10vw !important;
+        #top{
+            width: 60rem;
+        }
+        #bottom{
+            width: 60rem !important; 
+        }
     }
 }
 

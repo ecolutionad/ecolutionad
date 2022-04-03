@@ -6,6 +6,7 @@ $yellow: #EBA920;
 $light-purple: #AE8BDD;
 $background-color:#fbfcf5;
 $light-blue: #D2E0E0;
+$black: #3B3B3B;
 
 $roboto:'Roboto', sans-serif;;
 $barlow:'Barlow Condensed', sans-serif;
@@ -171,64 +172,72 @@ h4{
     }
 
 }
-
-
 #second{
-    padding: 0 6rem;
+    padding: 2rem;
     display: flex;
-        #member{
-            padding: 2rem 0;
-            width: 35rem;
-            .frame{
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
-                overflow-y: hidden;
-            }
-            #dan, #aileen{
-                padding: 2rem 0;
-            }
-            #text1{
-                padding: 2rem;
-                background-color: $yellow;
-                color: $purple;
-                h3{
-                    color: $normal-green;
-                    font-size: 2.5rem;
-                }
-            }
-            #text2{
-                h3{
-                    color: $light-green;
-                    font-size: 2.5rem;
-                }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        #top{
+            padding: 5rem 0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            #border{
+                width: 2rem;
+                height: 3px;
                 background-color: $dark-green;
-                padding: 2rem;
-                color: #ffff;
+            }
+        
+            p{
+                color: $dark-green;
+                padding-top: 1rem;
+            }
+            h3{
+                padding-bottom: 1rem;
+                color: $normal-green !important;
+            }
+        }
+        #bottom{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 2rem;
+            .list{
+                position: relative;
+                padding-bottom: 5rem;
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 10rem;
+                    opacity: 0.5;
+                }
+                h1{
+                    opacity: 0.9;
+                    color: $black;
+                    font-size: 120px !important;
+                    position: relative ;
+                    z-index: 1.1;
+                    padding-bottom: 1rem;
+                }
+                h3{
+                    border-top: 5px solid $black;
+                    width: 100%;
+                    padding-top: 1rem;
+                }
+                #text{
+                    p{
+                        color: $black;
+                        padding: 1rem 0;
+                        border-bottom: 1px solid $dark-green;
+                    }
+                }
             }
         }
 }
 
-#third{
-    padding: 5rem 2rem;
-    ul{
-        padding: 2rem 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        li{
-            padding: 2rem;
-            width: 15rem;
-            border-top: 1px solid $dark-green;
-            //border-left: 1px solid $dark-green;
 
-            border-left: 1px solid $dark-green;
-            border-image: linear-gradient(to bottom, $dark-green 70%, rgba(0,0,0,0) 30%); /* to top - at 50% transparent */
-            border-image-slice: 1;
-        }
-    }
-}
 #fourth{
     padding: 4rem 2rem;
     background-color: $yellow;
@@ -310,9 +319,8 @@ h4{
     $h1: 3rem;
     $h3: 2rem;
     $normal-font: 1.1rem;
-    $normal-font-word-spacing: 2px;
-    $normal-font-line-height:1.7;
-
+    $normal-font-word-spacing: 1.8px;
+    $normal-font-line-height:1.5;
     h1{
         font-size: $h1 !important;
     }
@@ -334,52 +342,13 @@ h4{
         }
     }
     #second{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        #member{
-            width: 50rem;
-        }
-        #dan, #aileen{
-            height: auto;
-            display: flex;
-        }
-        #aileen{
-            flex-direction: row-reverse;
-        }
-        .frame{
-            flex: 50% !important;
-            width: 50% !important;
-            //height: 100% !important;
-        }
-        #text1, #text2{
-            flex: 50% !important;
-            width: 50% !important;
-            height: auto !important;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            h3{
-                font-size: 3rem !important;
+        #top{
+            p{
+                width: 30rem;
             }
         }
     }
-    #third{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        ul{
-            width: 40rem;
-        }
-        h3{
-            font-size: 1.3rem!important;
-        }
-        p{
-            font-size: 0.8rem !important;
-        }
-    }
+
     #fourth{
         display: flex;
         flex-direction: column;
@@ -461,6 +430,31 @@ h4{
     #picture{
         padding-top: 15rem;
     }
+    #second{
+        h1{
+            font-size: 70px !important;
+        }
+        p{
+            font-size: 1rem !important;
+            line-height: 1.3rem;
+        }
+        h3{
+            font-size: 1.3rem !important;
+        }
+        #top{
+            h3{
+                font-size: 2rem !important;
+            }
+            margin-right: -30%;
+        }
+        #bottom{
+            flex-direction: row;
+            justify-content: space-between !important;
+            .list{
+                width: 12rem !important;
+            }
+        }
+    }
     #fourth{
         padding: 7rem 0;
     }
@@ -481,13 +475,22 @@ h4{
         padding-top: 7rem;
 
     }
+    #second{
+        #bottom{
+            h3{
+                font-size: 1.5rem !important;
+            }
+            .list{
+                width: 15rem !important;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1300px){
-    #third{
-        align-items: flex-start;
-        ul{
-            width: 100%;
+    #second{
+        #bottom{
+            width: 90% !important; 
         }
     }
 } 

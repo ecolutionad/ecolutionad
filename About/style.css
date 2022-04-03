@@ -202,6 +202,7 @@ h4 {
 
 #picture {
   width: 100vw;
+  position: relative;
 }
 
 #picture img {
@@ -210,6 +211,37 @@ h4 {
 
 #picture #tree {
   margin-top: -45%;
+}
+
+#picture #fan {
+  width: 8%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-animation: rotating 2s linear infinite;
+          animation: rotating 2s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 #second {

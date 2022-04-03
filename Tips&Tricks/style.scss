@@ -132,21 +132,21 @@ li{
     display: none;
 }
 #first{
-    background-color: $dark-green;
-    color: #ffff;
+    width: 100%;
+    position: relative;
     padding-top: 4rem;
-    #text{
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;    
-        justify-content: center;
-        h1{
-            padding: 2rem 0;
-        }
-        hr{
-            border-bottom: 4px solid $yellow;
-            width: 5rem;
-        } 
+    #head{
+        width: 100%;
+    }
+    #quote{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 120%;
+    }
+    #animation{
+        display: none;
     }
 }
 #nature{
@@ -316,9 +316,11 @@ li{
         letter-spacing: $normal-font-word-spacing;
         line-height: $normal-font-line-height;
     }
-    #nature{
-        width: 25rem !important;
-        margin-left: 20vw !important;
+    #first{
+        #quote{
+            width: 25rem;
+            font-size: 160% !important;
+        }
     }
     #second{
         #cover{
@@ -419,14 +421,25 @@ li{
         display: none;
     }
     #first{
-        padding: 10rem 0;
-    }
-    #nature{
-        width: 50vw !important;
-        position: absolute !important;
-        margin-left: 0!important;
-        left: 50vw;
-        transform: translate(-50% ,-20%);
+        padding-top: 0!important;
+        height: 100vh;
+        #head{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        #quote{
+            padding-right: 20%;
+            padding-top: 20%;
+        }
+        #animation{
+            display: block;
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 40%;
+        }
     }
     #second{
         padding-top: 20rem;
@@ -455,11 +468,6 @@ li{
     }
     #header-laptop{
         display: block;
-    }
-    #first{
-        #text{
-            padding-left: 20vw !important;
-        }
     }
     #nature{
         width: 35rem !important;

@@ -162,13 +162,29 @@ h4{
         }
     }
 }
-#picture{
+#picture{ 
     width: 100vw;
+    position: relative;
     img{
         width: 100%;
     }
     #tree{
         margin-top: -45%;
+    }
+    #fan{
+        width: 8%;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        animation: rotating 2s linear infinite;
+    }
+    @keyframes rotating {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
     }
 
 }

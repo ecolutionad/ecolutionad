@@ -749,5 +749,8 @@ li {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  #body {
+    background-color: #B6C186;
+  }
 }
 /*# sourceMappingURL=style.css.map */

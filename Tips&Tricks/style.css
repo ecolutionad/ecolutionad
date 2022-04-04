@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   letter-spacing: 1px;
   font-family: "Roboto", sans-serif;
 }
@@ -269,9 +270,32 @@ li {
 }
 
 #fourth {
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100vw;
   position: relative;
+}
+
+#fourth #circle {
+  display: none;
+}
+
+#fourth #bandage {
+  display: none;
+}
+
+#fourth #frame {
+  display: none;
+  opacity: 0.5;
+}
+
+#fourth #yellow {
+  display: none;
+  opacity: 0.5;
+}
+
+#fourth #green {
+  opacity: 0.5;
+  display: none;
 }
 
 #fourth .line {
@@ -294,6 +318,7 @@ li {
 }
 
 #fourth #cover {
+  position: relative;
   width: 100%;
 }
 
@@ -308,14 +333,18 @@ li {
 }
 
 #fourth #cover #display {
-  width: 15;
   height: auto;
-  padding: 2rem;
+  padding: 2rem !important;
 }
 
 #fourth #cover .first, #fourth #cover .second, #fourth #cover .third, #fourth #cover .fourth {
   width: 100%;
   padding-bottom: 4rem;
+  overflow-y: hidden;
+}
+
+#fourth #cover .first #display {
+  width: 85%;
 }
 
 #footer {
@@ -388,6 +417,14 @@ li {
   #second #cover {
     width: 35rem;
   }
+  #fourth #circle {
+    display: block;
+    opacity: 0.5;
+    position: absolute;
+    width: 30%;
+    top: 2%;
+    right: 5%;
+  }
   #fourth #img {
     width: 50% !important;
   }
@@ -418,6 +455,31 @@ li {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  #fourth .first {
+    position: relative;
+  }
+  #fourth .first #dispplay {
+    width: 100%;
+  }
+  #fourth .first #yellow {
+    display: block;
+    position: absolute;
+    width: 20%;
+    top: 40%;
+    left: 25%;
+  }
+  #fourth .second {
+    position: relative;
+  }
+  #fourth .second #frame {
+    width: 50%;
+    height: 80%;
+    display: block;
+    position: absolute;
+    z-index: 1.1;
+    right: 7%;
+    top: -5%;
+  }
   #fourth .second #display {
     padding: 2rem 0 !important;
     padding-left: 2rem !important;
@@ -425,8 +487,31 @@ li {
   #fourth .second #img {
     padding-right: 2rem;
   }
+  #fourth .third {
+    position: relative;
+  }
+  #fourth .third #bandage {
+    width: 20%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1.3;
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
   #fourth .third #img {
     padding-left: 2rem;
+  }
+  #fourth .fourth {
+    position: relative;
+  }
+  #fourth .fourth #green {
+    width: 20rem;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    right: 0;
   }
 }
 
@@ -508,7 +593,7 @@ li {
     width: 40%;
   }
   #second {
-    padding-top: 20rem;
+    padding-top: 10rem;
   }
   #second #cover {
     width: 50rem;
@@ -520,6 +605,10 @@ li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #fourth #circle {
+    top: 5%;
+    width: 25%;
   }
   #fourth #cover {
     width: 80%;
@@ -538,6 +627,9 @@ li {
   }
   #nature {
     width: 35rem !important;
+  }
+  #fourth #circle {
+    width: 20%;
   }
   #fourth .line {
     display: block;
@@ -588,6 +680,9 @@ li {
     padding-left: 3cm !important;
     width: 35vw !important;
   }
+  #fourth .second #frame {
+    width: 35vw !important;
+  }
   #fourth .third {
     position: relative;
   }
@@ -630,6 +725,9 @@ li {
     top: 0;
     padding-left: 3cm !important;
     width: 45vw !important;
+  }
+  #fourth .fourth #green {
+    bottom: -60%;
   }
 }
 

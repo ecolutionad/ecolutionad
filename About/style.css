@@ -319,6 +319,11 @@ h4 {
   padding-top: 1rem;
 }
 
+#second #bottom #evidence {
+  color: #fbfcf5;
+  text-decoration: none;
+}
+
 /*#second{
     padding: 2rem;
     p{

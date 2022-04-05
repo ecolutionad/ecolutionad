@@ -265,8 +265,75 @@ li {
   display: none;
 }
 
+#info {
+  padding: 4rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#info .top {
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+#info .top h2 {
+  color: #547932 !important;
+}
+
+#info .top p {
+  padding: 1rem 0;
+}
+
+#info .top button {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: #2F4B14;
+  color: #fbfcf5;
+  border: none;
+  border-radius: 25px;
+}
+
+#info #video {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vw;
+  overflow-y: hidden;
+}
+
+#info #video video {
+  width: 90%;
+  padding-top: 0.5rem;
+}
+
+#info #video #screen {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+#info #video #laptop {
+  display: none;
+}
+
 #third {
   padding: 2rem;
+  display: none;
 }
 
 #fourth {
@@ -597,6 +664,41 @@ li {
   }
   #second #cover {
     width: 50rem;
+  }
+  #info {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #info .top {
+    width: 40% !important;
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+  #info #video {
+    width: 40rem !important;
+    height: 30rem;
+  }
+  #info #video video {
+    width: 70%;
+  }
+  #info #video #screen {
+    display: none;
+  }
+  #info #video #laptop {
+    display: block;
+    top: 0;
+    left: -5%;
+    width: 110%;
+    position: absolute;
   }
   #fourth {
     display: -webkit-box;

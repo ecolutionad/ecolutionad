@@ -304,6 +304,7 @@ h4 {
   height: 1.8rem;
   color: #fbfcf5;
   border-radius: 15% 17% 13% 25px;
+  text-decoration: none;
 }
 
 #second #bottom #text #one, #second #bottom #text #two, #second #bottom #text #three, #second #bottom #text #four {

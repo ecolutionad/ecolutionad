@@ -296,6 +296,7 @@ h4 {
   color: #fbfcf5;
   border-radius: 15% 17% 13% 25px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #second #bottom #text #one, #second #bottom #text #two, #second #bottom #text #three, #second #bottom #text #four {

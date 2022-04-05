@@ -193,13 +193,6 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: center;
-    #container{
-        width: 100%;
-        padding-bottom: 10rem;
-        #myChart{
-            padding: 0 2rem;
-        }
-    }
     #bottom{
         padding: 7rem 2rem;
         display: flex;
@@ -207,7 +200,7 @@ h4{
         justify-content: center;
         align-items: center;
         h2{
-            color: $dark-green;
+            color: $normal-green;
         }
         #earth{
             display: none;
@@ -234,61 +227,59 @@ h4{
             }
         }
     }
-}
-/*#second{
-    padding: 2rem;
-    p{
-        padding: 1rem 0;
-    }
-    ul{
-        #display{
-            display: none;
-        }
-        li{
-            h3:hover{
-                cursor: pointer;
-                color: $dark-green
-            }
-            padding: 1rem 0;
-            border-top: 1px solid $light-green;
-            button{
-                width: 100%;
-                background-color: transparent;
-                border: 1.5px solid $dark-green;
-                color: $dark-green;
-                height: 3rem;
-                border-radius: 25px;
-                transition-duration: 0.4s;
-                text-decoration: none;
-            }
-            button:hover{
-                cursor: pointer;
-                background-color: #C5D791;
-                color: $dark-green;
-                border: none;
-                text-decoration: none;
-            }
-            #button1{
-                text-decoration: none;
-                color: $dark-green;
-            }
-        }
-    }
-}*/
-/*#third{
-    padding: 2rem;
-    position: relative;
-    height: auto;
-    #square{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color:$background-color;
-
-        height: 20%;
+    #containerOut{
         width: 100%;
+        padding-bottom: 10rem;
+        #myChart{
+            padding: 0 2rem;
+        }
+        #cause{
+            h2{
+                color: $normal-green;
+            }
+            padding: 2rem;
+            p{
+                padding: 1rem 0;
+            }
+            ul{
+                #display{
+                    display: none;
+                }
+                li{
+                    h3:hover{
+                        cursor: pointer;
+                        color: $dark-green
+                    }
+                    padding: 1rem 0;
+                    border-top: 1px solid $light-green;
+                    button{
+                        width: 100%;
+                        background-color: transparent;
+                        border: 1.5px solid $dark-green;
+                        color: $dark-green;
+                        height: 3rem;
+                        border-radius: 25px;
+                        transition-duration: 0.4s;
+                        text-decoration: none;
+                    }
+                    button:hover{
+                        cursor: pointer;
+                        background-color: #C5D791;
+                        color: $dark-green;
+                        border: none;
+                        text-decoration: none;
+                    }
+                    #button1{
+                        text-decoration: none;
+                        color: $dark-green;
+                    }
+                }
+            }
+        }
     }
-}*/
+}
+
+
 
 //MAIN
 //MAIN
@@ -369,7 +360,7 @@ h4{
             width: 30rem;
         }
     }
-    /*#second{
+    #third{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -377,14 +368,7 @@ h4{
             width: 40rem;
         }
     }
-    #third{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h2, #cover{
-            width: 40rem;
-        }
-    }*/
+
 }
 
 @media only screen and (min-width: 850px) {
@@ -463,18 +447,20 @@ h4{
         padding-top: 7rem;
     }
     #second{
-        #container, #bottom{
+        #containerOut, #bottom{
             width: 65rem;
         }
+        #containerOut{
+            display: flex;
+            flex-direction: row;
+            #myChart{
+                width: 50%;
+            }
+            #cause{
+                width: 50%;
+            }
+        }
     }
-    /*#second{
-        #container{
-            width: 90vw !important;
-        }
-        button{
-            width: 15rem !important;
-        }
-    }*/
 }
 @media only screen and (max-width: 500px){
     #footer{

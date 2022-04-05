@@ -27,7 +27,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-
+//
 const labels = [
   '2010',
   '2011',
@@ -45,8 +45,8 @@ const data = {
   labels: labels,
   datasets: [{
     label: 'Carbon Dioxide Emissions',
-    backgroundColor: '#547932',
-    borderColor: '#547932',
+    backgroundColor: '#31387A',
+    borderColor: '#31387A',
     data: [
       31045.1,
       31931.9,

@@ -227,6 +227,12 @@ li{
             color: $background-color;
             border: none;
             border-radius: 25px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: $light-green;
+            color: $dark-green;
         }
     }
     #video{

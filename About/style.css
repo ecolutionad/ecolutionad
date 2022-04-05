@@ -245,82 +245,133 @@ h4 {
 }
 
 #second {
-  padding: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#second p {
-  padding: 1rem 0;
+#second #container {
+  width: 100%;
+  padding-bottom: 10rem;
 }
 
-#second ul #display {
+#second #container #myChart {
+  padding: 0 2rem;
+}
+
+#second #bottom {
+  padding: 7rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#second #bottom h2 {
+  color: #2F4B14;
+}
+
+#second #bottom #earth {
   display: none;
 }
 
-#second ul li {
-  padding: 1rem 0;
-  border-top: 1px solid #B6C186;
+#second #bottom #text {
+  padding-top: 3rem;
 }
 
-#second ul li h3:hover {
-  cursor: pointer;
-  color: #2F4B14;
-}
-
-#second ul li button {
+#second #bottom #text button {
   width: 100%;
-  background-color: transparent;
-  border: 1.5px solid #2F4B14;
-  color: #2F4B14;
-  height: 3rem;
-  border-radius: 25px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  text-decoration: none;
-}
-
-#second ul li button:hover {
-  cursor: pointer;
-  background-color: #C5D791;
-  color: #2F4B14;
+  background-color: #EBA920;
   border: none;
-  text-decoration: none;
+  font-size: 100%;
+  height: 1.8rem;
+  color: #fbfcf5;
+  border-radius: 15% 17% 13% 25px;
 }
 
-#second ul li #button1 {
-  text-decoration: none;
-  color: #2F4B14;
+#second #bottom #text #one, #second #bottom #text #two, #second #bottom #text #three, #second #bottom #text #four {
+  padding-bottom: 2rem;
 }
 
-#third {
-  padding: 2rem;
-  position: relative;
-  height: auto;
+#second #bottom #text #one h3, #second #bottom #text #two h3, #second #bottom #text #three h3, #second #bottom #text #four h3 {
+  padding-bottom: 1rem;
 }
 
-#third #square {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #fbfcf5;
-  height: 20%;
-  width: 100%;
+#second #bottom #text #one p, #second #bottom #text #two p, #second #bottom #text #three p, #second #bottom #text #four p {
+  padding-top: 1rem;
 }
 
-#fourth {
-  padding: 0 2rem;
-  position: relative;
-  top: -5rem;
-  z-index: 0.1;
-}
+/*#second{
+    padding: 2rem;
+    p{
+        padding: 1rem 0;
+    }
+    ul{
+        #display{
+            display: none;
+        }
+        li{
+            h3:hover{
+                cursor: pointer;
+                color: $dark-green
+            }
+            padding: 1rem 0;
+            border-top: 1px solid $light-green;
+            button{
+                width: 100%;
+                background-color: transparent;
+                border: 1.5px solid $dark-green;
+                color: $dark-green;
+                height: 3rem;
+                border-radius: 25px;
+                transition-duration: 0.4s;
+                text-decoration: none;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: #C5D791;
+                color: $dark-green;
+                border: none;
+                text-decoration: none;
+            }
+            #button1{
+                text-decoration: none;
+                color: $dark-green;
+            }
+        }
+    }
+}*/
+/*#third{
+    padding: 2rem;
+    position: relative;
+    height: auto;
+    #square{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color:$background-color;
 
-#fifth {
-  padding: 2rem;
-}
-
-#fifth iframe {
-  padding-top: 2rem;
-}
-
+        height: 20%;
+        width: 100%;
+    }
+}*/
 #footer {
   background-color: #F1F4E8;
   padding: 2rem;
@@ -399,36 +450,25 @@ h4 {
   #first #text {
     width: 40rem;
   }
-  #second {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  #second #bottom {
+    width: 30rem;
   }
-  #second #container {
-    width: 40rem;
-  }
-  #third {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #third h2, #third #cover {
-    width: 40rem;
-  }
+  /*#second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #container{
+            width: 40rem;
+        }
+    }
+    #third{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2, #cover{
+            width: 40rem;
+        }
+    }*/
 }
 
 @media only screen and (min-width: 850px) {
@@ -449,6 +489,45 @@ h4 {
   #header-mobile #top i {
     font-size: 2.7rem;
   }
+  #second p {
+    word-spacing: 3px !important;
+    font-size: 1rem;
+  }
+  #second #bottom {
+    width: 100%;
+    position: relative;
+  }
+  #second #bottom #earth {
+    display: block;
+    position: absolute;
+    width: 25%;
+  }
+  #second #bottom #text {
+    position: relative;
+    z-index: 1.1;
+    padding: 2rem 4.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #second #bottom #one, #second #bottom #two, #second #bottom #three, #second #bottom #four {
+    width: 20rem;
+  }
+  #second #bottom #two, #second #bottom #four {
+    text-align: right;
+  }
+  #second #bottom #three, #second #bottom #four {
+    padding-top: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -464,12 +543,17 @@ h4 {
             justify-content: center;
     padding-top: 7rem;
   }
-  #second #container {
-    width: 90vw !important;
+  #second #container, #second #bottom {
+    width: 65rem;
   }
-  #second button {
-    width: 15rem !important;
-  }
+  /*#second{
+        #container{
+            width: 90vw !important;
+        }
+        button{
+            width: 15rem !important;
+        }
+    }*/
 }
 
 @media only screen and (max-width: 500px) {

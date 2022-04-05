@@ -10,6 +10,8 @@ function goUp(){
     document.getElementById("container").style.display = "none";
 }
 
+
+
 var coll = document.getElementsByClassName("collap");
 var i;
 
@@ -24,3 +26,49 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+
+const labels = [
+  '2010',
+  '2011',
+  '2012',
+  '2013',
+  '2014',
+  '2015',
+  '2016',
+  '2017',
+  '2018',
+  '2019',
+];
+
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'Carbon Dioxide Emissions',
+    backgroundColor: '#547932',
+    borderColor: '#547932',
+    data: [
+      31045.1,
+      31931.9,
+      32249.8,
+      32773.2,
+      32835.1,
+      32897.2,
+      33046.7,
+      33428.8,
+      34046.1,
+      34039.8,
+    ],
+  }]
+};
+
+const config = {
+  type: 'line',
+  data: data,
+  options: {}
+};
+
+const myChart = new Chart(
+  document.getElementById('myChart'),
+  config
+);

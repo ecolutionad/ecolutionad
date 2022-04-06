@@ -296,6 +296,14 @@ li {
   color: #fbfcf5;
   border: none;
   border-radius: 25px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#info .top button:hover {
+  background-color: #B6C186;
+  color: #2F4B14;
 }
 
 #info #video {

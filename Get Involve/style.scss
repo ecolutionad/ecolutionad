@@ -97,6 +97,9 @@ h4{
             a:hover{
                 text-decoration: underline;
             }
+            .active{
+                color: $light-green !important;
+            }
         }
     }
 }
@@ -123,6 +126,12 @@ h4{
             text-decoration: none;
             color: $dark-green;
             padding-left: 1rem;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .active{
+            color: $light-green !important;
         }
     }
     display: none;

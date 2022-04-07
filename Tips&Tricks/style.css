@@ -114,6 +114,10 @@ li {
   text-decoration: underline;
 }
 
+#header-mobile #container #bottom .active {
+  color: #B6C186 !important;
+}
+
 #header-laptop {
   width: 100%;
   position: fixed;
@@ -153,6 +157,14 @@ li {
   text-decoration: none;
   color: #2F4B14;
   padding-left: 1rem;
+}
+
+#header-laptop #nav a:hover {
+  text-decoration: underline;
+}
+
+#header-laptop #nav .active {
+  color: #B6C186 !important;
 }
 
 #first {

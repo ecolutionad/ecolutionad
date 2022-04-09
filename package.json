@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/ecolutionad/ecolutionad/issues"
   },
-  "homepage": "https://github.com/ecolutionad/ecolutionad#readme"
+  "homepage": "https://github.com/ecolutionad/ecolutionad#readme",
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  },
+  "dependencies": {
+    "locomotive-scroll": "^4.1.4"
+  }
 }

@@ -119,6 +119,7 @@ h3{
 
 #main{
     padding-top: 4rem;
+    overflow: hidden;
     #first{
         display: flex;
         flex-direction: column;
@@ -280,6 +281,7 @@ h3{
         color: $dark-green;
         padding: 2rem 2rem 5rem 2rem;
         position: relative;
+        overflow-y: hidden;
         #bg-logo{
             position: absolute;
             transform: rotate(40deg);
@@ -345,6 +347,7 @@ h3{
         top:0;
         left: 0;
         width: 100%;
+        overflow-y: hidden;
         #white-top{
             position: absolute;
             top: 0;
@@ -359,7 +362,7 @@ h3{
             width: 100vw;
             height: 50vw;
         }
-        #sun{
+        .sun{
             position: absolute;
             width: 10rem;
             right: 30%;

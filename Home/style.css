@@ -137,6 +137,7 @@ h3 {
 
 #main {
   padding-top: 4rem;
+  overflow: hidden;
 }
 
 #main #first {
@@ -365,6 +366,7 @@ h3 {
   color: #2F4B14;
   padding: 2rem 2rem 5rem 2rem;
   position: relative;
+  overflow-y: hidden;
 }
 
 #main #third #bg-logo {
@@ -453,6 +455,7 @@ h3 {
   top: 0;
   left: 0;
   width: 100%;
+  overflow-y: hidden;
 }
 
 #main #fourth #white-top {
@@ -471,7 +474,7 @@ h3 {
   height: 50vw;
 }
 
-#main #fourth #sun {
+#main #fourth .sun {
   position: absolute;
   width: 10rem;
   right: 30%;

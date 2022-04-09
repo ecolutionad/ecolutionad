@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+
     <!--STYLESHEET-->
     <link rel="stylesheet" href="style.css"> 
 
@@ -26,177 +34,170 @@
     <link rel="shortcut icon" type="image/png" href="../picture/favicon.png">
 </head>
 <body>
-    <div id="header-mobile">
-            <div id="top">
-                <a href="../Home/index.html"><img src="../picture/logo.png" alt="logo"></a>
-                <i onclick="dropDown()" id="before" class="fas fa-bars"></i>
-                <i onclick="goUp()" id="after" class="fas fa-circle-notch"></i>
-
-            </div>
-
-            <div id="container">
-                <div id="bottom">
-                    <a href="../About/index.html">ABOUT</a>
-                    <a href="../Tips&Tricks/index.html">TIPS & TRICKS</a>
-                    <a href="../Get Involve/index.html">GET INVOLVED</a>
-                    <a href="../Contact/index.html">CONTACT</a>
+            <div id="header-mobile">
+                    <div id="top">
+                        <a href="../Home/index.html"><img src="../picture/logo.png" alt="logo"></a>
+                        <i onclick="dropDown()" id="before" class="fas fa-bars"></i>
+                        <i onclick="goUp()" id="after" class="fas fa-circle-notch"></i>
+        
+                    </div>
+        
+                    <div id="container">
+                        <div id="bottom">
+                            <a href="../About/index.html">ABOUT</a>
+                            <a href="../Tips&Tricks/index.html">TIPS & TRICKS</a>
+                            <a href="../Get Involve/index.html">GET INVOLVED</a>
+                            <a href="../Contact/index.html">CONTACT</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-    </div>
-    <div id="header-laptop">
-        <div id="top">
-            <a href="../Home/index.html"><img src="../picture/logo.png" alt="logo"></a>
-            <div id="nav">
-                <a href="../About/index.html">ABOUT</a>
-                <a href="../Tips&Tricks/index.html">TIPS & TRICKS</a>
-                <a href="../Get Involve/index.html">GET INVOLVED</a>
-                <a href="../Contact/index.html">CONTACT</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="main">
-        <div id="first">
-            <div id="text">
-                <h1>Reduce your <h1 class="underline">carbon <br>footprint</h1></h1>
-                <p>Understanding your carbon footprint can help limit the impact of your consumption on the environment. There are different online solutions to help estimate and reduce your carbon footprint.</p>
-            </div>
-            <img src="../picture/home/earth.png" alt="">
-
-            <div class="ocean1">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-            </div>
-            <div class="ocean2">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-            </div>
-
-        </div>
-
-        <div id="second">
-            <div id="outsider">
-                <img id="photo" src="../picture/fake-person.jpeg" alt="">
-                <div id="image-circle">
-                    <img id="slogo" src="../picture/small-logo.png">
+                <div id="header-laptop">
+                    <div id="top">
+                        <a href="../Home/index.html"><img src="../picture/logo.png" alt="logo"></a>
+                        <div id="nav">
+                            <a href="../About/index.html">ABOUT</a>
+                            <a href="../Tips&Tricks/index.html">TIPS & TRICKS</a>
+                            <a href="../Get Involve/index.html">GET INVOLVED</a>
+                            <a href="../Contact/index.html">CONTACT</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div id="container">
-                <div id="text">
-                    <h3>OUR MISSION</h3>
-                    <p>Our mission is to find ways to reduce overall carbon footprint. There are many ways to help the environment. We also want to let everyone know about the problems of climate change and increase in carbon footprint so that people can be aware and contribute!</p>
-                </div>
-                <a href="../Contact/index.html"><button>CONTACT</button></a>
-            </div>
+                <div id="main">
+                    <div id="first">
+                        <div id="text">
+                            <h1>Reduce your <h1 class="underline">carbon <br>footprint</h1></h1>
+                            <p>Understanding your carbon footprint can help limit the impact of your consumption on the environment. There are different online solutions to help estimate and reduce your carbon footprint.</p>
+                        </div>
+                        <img src="../picture/home/earth.png" alt="">
             
-        </div>
-
-        <div id="third">
-            <img id="bg-logo" src="../picture/pattern-logo.png" alt="">
-            <div id="text">
-                <h3>DIVERSITY, EQUITY, & INCLUDSION IN ECO-LUTIONAD</h3>
-                <p>We also want not only this world to be a better place and healthier place, we also want it to be a more inclusive environment for everyone around us regardless of any circumstances that may make someone different because everyone is different in their own way.</p>
-            </div>
-            <h1>OUR MISSIONS</h1>
-
-            <ul id="mission">
-                <li class="left">
-                    <img src="../picture/animation/affection.gif" alt="affection"> 
-                    <p>Affections of Carbon Footprint</p>
-                </li>
-                <li class="right">
-                    <img src="../picture/animation/research.gif" alt="research">
-                    <p>Our Research</p>
-                </li>
-                <li class="left">
-                    <img src="../picture/animation/plan.gif" alt="plan">
-                    <p>Our Plans</p>
-                </li>
-                <li class="right">
-                    <img src="../picture/animation/upcoming.gif" alt="">
-                    <p>Up Coming Events</p>
-                </li>
-            </ul>
-            <div id="cover">
-                <div id="pattern"></div>
-            </div>
-        </div>
-
-        <div id="fourth">
-            <img src="../picture/home/sun.png" alt="" id="sun">
-            <img id="back" src="../picture/home/back.png" alt="">
-            <img src="../picture/home/front.png" alt="" id="front">
-            <img id="white-top" src="../picture/home/white-top.png" alt="">
-        </div>
-
-        <div id="fifth">
-            <div id="top">
-                <h3>MEET OUR TEAM</h3>
-                <p>This is our Web Design team! To keep things organized and to give everyone a role in the project, we all have a different thing to do regarding the website!</p>
-            </div>
-                <ul id="bottom">
-                    <li>
-                        <div id="img">
-                            <img src="../picture/home/dan.jpg" alt="">
+                        <div class="ocean1">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                        </div>
+                        <div class="ocean2">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                        </div>
+            
+                    </div>
+            
+                    <div id="second">
+                        <div id="outsider">
+                            <img id="photo" src="../picture/fake-person.jpeg" alt="">
+                            <div id="image-circle">
+                                <img id="slogo" src="../picture/small-logo.png">
+                            </div>
+                        </div>
+            
+                        <div id="container">
+                            <div id="text">
+                                <h3>OUR MISSION</h3>
+                                <p>Our mission is to find ways to reduce overall carbon footprint. There are many ways to help the environment. We also want to let everyone know about the problems of climate change and increase in carbon footprint so that people can be aware and contribute!</p>
+                            </div>
+                            <a href="../Contact/index.html"><button>CONTACT</button></a>
                         </div>
                         
-                        <div class="text">
-                            <div class="name">Dan Nguyen</div>
-                            <div class="job">Web Developer</div>
+                    </div>
+            
+                    <div id="third">
+                        <img id="bg-logo" src="../picture/pattern-logo.png" alt="">
+                        <div id="text">
+                            <h3>DIVERSITY, EQUITY, & INCLUDSION IN ECO-LUTIONAD</h3>
+                            <p>We also want not only this world to be a better place and healthier place, we also want it to be a more inclusive environment for everyone around us regardless of any circumstances that may make someone different because everyone is different in their own way.</p>
                         </div>
-                    </li>
-                    <li>
-                        <div id="img">
-                            <img src="../picture/home/aileen.PNG" alt="">
+                        <h1 class="pin">OUR MISSIONS</h1>
+            
+                        <ul id="mission">
+                            <li class="left">
+                                <img src="../picture/animation/affection.gif" alt="affection"> 
+                                <p>Affections of Carbon Footprint</p>
+                            </li>
+                            <li class="right">
+                                <img src="../picture/animation/research.gif" alt="research">
+                                <p>Our Research</p>
+                            </li>
+                            <li class="left">
+                                <img src="../picture/animation/plan.gif" alt="plan">
+                                <p>Our Plans</p>
+                            </li>
+                            <li class="right">
+                                <img src="../picture/animation/upcoming.gif" alt="">
+                                <p>Up Coming Events</p>
+                            </li>
+                        </ul>
+                        <div id="cover" class="pin2">
+                            <div id="pattern"></div>
                         </div>
-                        
-                        <div class="text">
-                            <div class="name">Aileen Ng</div>
-                            <div class="job">Web Researcher & Organizer</div>
+                    </div>
+            
+                    <div id="fourth">
+                        <img src="../picture/home/sun.png" alt="" class="sun">
+                        <img id="back" src="../picture/home/back.png" alt="">
+                        <img src="../picture/home/front.png" alt="" id="front">
+                        <img id="white-top" src="../picture/home/white-top.png" alt="">
+                    </div>
+            
+                    <div id="fifth">
+                        <div id="top">
+                            <h3>MEET OUR TEAM</h3>
+                            <p>This is our Web Design team! To keep things organized and to give everyone a role in the project, we all have a different thing to do regarding the website!</p>
                         </div>
-                    </li>
-                    
-                </ul>
-        </div>
-
-    </div>
-
-    <div id="footer">
-        <div id="left">
-            <ul id="text">
-                <li>Blue Valley West High School</li>
-                <li>School of Blue Valley USD 229 District</li>
-                <li>16200 Antioch Rd, Overland Park, KS 66085 <br> (913) 239-3700</li>
-            </ul>
-    
-            <div id="contact">
-                <h2>Contact</h2>
-                <div id="media">
-                    <a href="https://www.facebook.com/westjags" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/westjags/" target="_blank"><i class="fab fa-instagram-square"></i></a>
-                    <a href="https://twitter.com/westjags" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div> 
-            </div>
-        </div>
-        <div id="right">
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23fbfcf5&ctz=America%2FChicago&src=dGhhb2Rhbm5ndXllbjEwMDRAZ21haWwuY29t&color=%23547932" width="300" height="300" frameborder="0" scrolling="no"></iframe>
-        </div>
-
-    </div>
-<!---
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js' integrity='sha512-UgS0SVyy/0fZ0i48Rr7gKpnP+Jio3oC7M4XaKP3BJUB/guN6Zr4BjU0Hsle0ey2HJvPLHE5YQCXTDrx27Lhe7A==' crossorigin='anonymous'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./script.js"></script>
+                            <ul id="bottom">
+                                <li>
+                                    <div id="img">
+                                        <img src="../picture/home/dan.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="text">
+                                        <div class="name">Dan Nguyen</div>
+                                        <div class="job">Web Developer</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="img">
+                                        <img src="../picture/home/aileen.PNG" alt="">
+                                    </div>
+                                    
+                                    <div class="text">
+                                        <div class="name">Aileen Ng</div>
+                                        <div class="job">Web Researcher & Organizer</div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                    </div>
+            
+                </div>
+            
+                <div id="footer">
+                    <div id="left">
+                        <ul id="text">
+                            <li>Blue Valley West High School</li>
+                            <li>School of Blue Valley USD 229 District</li>
+                            <li>16200 Antioch Rd, Overland Park, KS 66085 <br> (913) 239-3700</li>
+                        </ul>
+                
+                        <div id="contact">
+                            <h2>Contact</h2>
+                            <div id="media">
+                                <a href="https://www.facebook.com/westjags" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/westjags/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                                <a href="https://twitter.com/westjags" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div id="right">
+                            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23fbfcf5&ctz=America%2FChicago&src=dGhhb2Rhbm5ndXllbjEwMDRAZ21haWwuY29t&color=%23547932" width="300" height="300" frameborder="0" scrolling="no"></iframe>
+                    </div>
+            
+                </div>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+
+<script type="module" src="../Home/script.js"></script>
 </html>

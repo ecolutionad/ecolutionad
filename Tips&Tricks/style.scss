@@ -101,9 +101,6 @@ li{
             a:hover{
                 text-decoration: underline;
             }
-            .active{
-                color: $light-green !important;
-            }
         }
     }
 }
@@ -130,12 +127,6 @@ li{
             text-decoration: none;
             color: $dark-green;
             padding-left: 1rem;
-        }
-        a:hover{
-            text-decoration: underline;
-        }
-        .active{
-            color: $light-green !important;
         }
     }
     display: none;

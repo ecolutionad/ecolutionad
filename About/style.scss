@@ -53,6 +53,7 @@ h4{
     padding: 2rem 0;
 }
 
+
 #header-mobile{
     width: 100%;
     position: fixed;
@@ -97,9 +98,6 @@ h4{
             a:hover{
                 text-decoration: underline;
             }
-            .active{
-                color: $light-green !important;
-            }
         }
     }
 }
@@ -127,15 +125,9 @@ h4{
             color: $dark-green;
             padding-left: 1rem;
         }
-        a:hover{
-            text-decoration: underline;
-        }
-        .active{
-            color: $light-green !important;
-        }
     }
     display: none;
-    }
+}
 #first{
     color: $dark-green;
     padding-top: 4rem;

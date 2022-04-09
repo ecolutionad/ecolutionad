@@ -1,3 +1,9 @@
+import LocomotiveScroll from 'locomotive-scroll';
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
 
 
 function dropDown(){
@@ -12,7 +18,7 @@ function goUp(){
 }
 
 //THIRD
-if(window.innerWidth >= 600){
+/*if(window.innerWidth >= 600){
     gsap.to(".pin",{
         scrollTrigger:{
             trigger: ".pin",
@@ -31,9 +37,7 @@ if(window.innerWidth >= 600){
             end: "+=300"
         },
     })
-}
-console.log(window.innerWidth)
-
+}*/
 
 //FOURTH
 gsap.to("#fourth",{

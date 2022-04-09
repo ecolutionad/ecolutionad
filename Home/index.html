@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <!--SMOOTH SCROLLBAR-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.css">
 
     <!--GSAP-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
@@ -33,7 +36,7 @@
     <title>ECO-LUTIONAD</title>
     <link rel="shortcut icon" type="image/png" href="../picture/favicon.png">
 </head>
-<body>
+<body data-scroll-container>
             <div id="header-mobile">
                     <div id="top">
                         <a href="../Home/index.html"><img src="../picture/logo.png" alt="logo"></a>
@@ -63,10 +66,10 @@
                     </div>
                 </div>
                 <div id="main">
-                    <div id="first">
+                    <div id="first" data-scroll-section>
                         <div id="text">
                             <h1>Reduce your <h1 class="underline">carbon <br>footprint</h1></h1>
-                            <p>Understanding your carbon footprint can help limit the impact of your consumption on the environment. There are different online solutions to help estimate and reduce your carbon footprint.</p>
+                            <p data-scroll data-scroll-speed="2">Understanding your carbon footprint can help limit the impact of your consumption on the environment. There are different online solutions to help estimate and reduce your carbon footprint.</p>
                         </div>
                         <img src="../picture/home/earth.png" alt="">
             
@@ -83,7 +86,7 @@
             
                     </div>
             
-                    <div id="second">
+                    <div id="second" data-scroll-section>
                         <div id="outsider">
                             <img id="photo" src="../picture/fake-person.jpeg" alt="">
                             <div id="image-circle">
@@ -101,7 +104,7 @@
                         
                     </div>
             
-                    <div id="third">
+                    <div id="third" data-scroll-section>
                         <img id="bg-logo" src="../picture/pattern-logo.png" alt="">
                         <div id="text">
                             <h3>DIVERSITY, EQUITY, & INCLUDSION IN ECO-LUTIONAD</h3>
@@ -132,14 +135,14 @@
                         </div>
                     </div>
             
-                    <div id="fourth">
+                    <div id="fourth" data-scroll-section>
                         <img src="../picture/home/sun.png" alt="" class="sun">
                         <img id="back" src="../picture/home/back.png" alt="">
                         <img src="../picture/home/front.png" alt="" id="front">
                         <img id="white-top" src="../picture/home/white-top.png" alt="">
                     </div>
             
-                    <div id="fifth">
+                    <div id="fifth" data-scroll-section>
                         <div id="top">
                             <h3>MEET OUR TEAM</h3>
                             <p>This is our Web Design team! To keep things organized and to give everyone a role in the project, we all have a different thing to do regarding the website!</p>
@@ -171,7 +174,7 @@
             
                 </div>
             
-                <div id="footer">
+                <div id="footer" data-scroll-section>
                     <div id="left">
                         <ul id="text">
                             <li>Blue Valley West High School</li>
@@ -198,6 +201,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+
 
 <script type="module" src="../Home/script.js"></script>
 </html>

@@ -1,21 +1,3 @@
-import LocomotiveScroll from 'locomotive-scroll';
-
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
-});
-
-
-function dropDown(){
-    document.getElementById("before").style.display = "none";
-    document.getElementById("after").style.display = "block";
-    document.getElementById("container").style.display = "block";
-}
-function goUp(){
-    document.getElementById("before").style.display = "block";
-    document.getElementById("after").style.display = "none";
-    document.getElementById("container").style.display = "none";
-}
 
 //THIRD
 /*if(window.innerWidth >= 600){

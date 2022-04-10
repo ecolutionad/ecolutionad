@@ -165,18 +165,20 @@ h4{
 #picture{ 
     width: 100vw;
     position: relative;
+    overflow-y: hidden;
     img{
         width: 100%;
     }
     #tree{
         margin-top: -45%;
+        position: relative;
     }
     #fan{
         width: 8%;
         position: absolute;
         top: 25%;
         left: 50%;
-        animation: rotating 2s linear infinite;
+        //animation: rotating 2s linear infinite;
     }
     @keyframes rotating {
         from{

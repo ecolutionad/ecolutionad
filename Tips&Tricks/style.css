@@ -333,9 +333,11 @@ li {
   left: 0;
   width: 100%;
   position: absolute;
+  pointer-events: none;
 }
 
 #info #video #laptop {
+  pointer-events: none;
   display: none;
 }
 
@@ -356,40 +358,46 @@ li {
 
 #fourth #bandage {
   display: none;
+  pointer-events: none;
 }
 
 #fourth #frame {
   display: none;
   opacity: 0.5;
+  pointer-events: none;
 }
 
 #fourth #yellow {
   display: none;
   opacity: 0.5;
+  pointer-events: none;
 }
 
 #fourth #green {
   opacity: 0.5;
   display: none;
+  pointer-events: none;
 }
 
 #fourth .line {
   display: none;
-  height: 40cm;
-  background-color: #2F4B14;
-  width: 1px;
+  height: 130vw;
+  overflow-x: visible;
+  width: 15px;
   position: absolute;
-  top: 14rem;
+  left: 50%;
+  top: 16rem;
+  border-left: 1px solid #2F4B14;
 }
 
-#fourth .line #dot {
+#fourth .line .dot {
   height: 15px;
   width: 15px;
   background-color: #2F4B14;
   border-radius: 50%;
   display: inline-block;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 #fourth #cover {
@@ -399,12 +407,34 @@ li {
 
 #fourth #cover #img {
   width: 100%;
+  overflow: hidden;
 }
 
 #fourth #cover #img img {
   width: 100%;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+#fourth #cover #img:hover img {
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@-webkit-keyframes scale {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes scale {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
 
 #fourth #cover #display {

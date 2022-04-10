@@ -213,7 +213,7 @@ li{
     flex-direction: column;
     .top{
         h2{
-            color: $normal-green !important;
+            color: $normal-green !important; 
         }
         width: 100%;
         padding-bottom: 5%;
@@ -252,8 +252,10 @@ li{
             left: 0;
             width: 100%;
             position: absolute;
+            pointer-events: none;
         }
         #laptop{
+            pointer-events: none;
             display: none;
         }
     }
@@ -271,43 +273,59 @@ li{
     }
     #bandage{
         display: none;
+        pointer-events: none;
     }
     #frame{
         display: none;
         opacity: 0.5;
+        pointer-events: none;
     }
     #yellow{
         display: none;
         opacity: 0.5;
+        pointer-events: none;
     }
     #green{
         opacity: 0.5;
         display: none;
+        pointer-events: none;
     }
     .line{
         display: none;
-        height: 40cm;
-        background-color: $dark-green;
-        width: 1px;
+        height: 130vw;
+        overflow-x: visible;
+        width: 15px;
         position: absolute;
-        top: 14rem;
-        #dot {
+        left: 50%;
+        top: 16rem;
+        border-left: 1px solid $dark-green;
+        .dot{
             height: 15px;
-            width: 15px;
-            background-color: $dark-green;
-            border-radius: 50%;
-            display: inline-block;
-            transform: translate(-50%);
-          }
+           width: 15px;
+           background-color: $dark-green;
+           border-radius: 50%;
+           display: inline-block;
+           transform: translate(-50%, 0);
+        }
     }
     #cover{
         position: relative;
         width: 100%;
         #img{
             width: 100%;
+            overflow: hidden;
             img{
                 width: 100%;
                 filter: grayscale(100%);
+            }
+        }
+        #img:hover{
+            img{
+                animation-name: scale;
+                animation-duration: 10s;
+            }
+            @keyframes scale {
+                to{transform: scale(1.5);}
             }
         }
         #display{

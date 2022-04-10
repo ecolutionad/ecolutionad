@@ -72,3 +72,25 @@ const myChart = new Chart(
   document.getElementById('myChart'),
   config
 );
+
+//PICTURE
+gsap.to("#sky",{
+  scrollTrigger:{
+      trigger: "#picture",
+      start: "top bottom",
+      scrub: true,
+  },
+  scale: 1.5,
+  y: 250,
+  opacity: 0
+})
+
+gsap.to("#fan",{
+  scrollTrigger:{
+      trigger: "#picture",
+      start: "top bottom",
+      scrub: true,
+      duration: 0.5
+  },
+  rotation:360
+})

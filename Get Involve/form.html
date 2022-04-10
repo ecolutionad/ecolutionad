@@ -25,13 +25,12 @@
     <title>ECO-LUTIONAD - Donation Form</title>
     <link rel="shortcut icon" type="image/png" href="../picture/favicon.png">
 </head>
-<body>
+<body id="body">
     <div id="header-mobile">
         <div id="top">
             <a href="../Home/index.html"><img src="../picture/logo.png" alt="logo"></a>
             <i onclick="dropDown()" id="before" class="fas fa-bars"></i>
             <i onclick="goUp()" id="after" class="fas fa-circle-notch"></i>
-
         </div>
 
         <div id="container">
@@ -42,7 +41,7 @@
                 <a href="../Contact/index.html">CONTACT</a>
             </div>
         </div>
-</div>
+    </div>
     <div id="header-laptop">
         <div id="top">
             <a href="../Home/index.html"><img src="../picture/logo.png" alt="logo"></a>
@@ -54,7 +53,7 @@
             </div>
         </div>
     </div>
-<br><br><br><br><br><br>
+    <br><br><br><br><br><br>
 
     <div id="form">
         <div>
@@ -86,11 +85,17 @@
 
             <label for="comment">COMMENTS *</label><br><br>
                 <textarea name="message" rows="10" cols="10"></textarea><br><br><br>
-                <input id="send" type="submit" value="Send"><br><br><br><br>
+                <input onclick="submit()" id="send" type="submit" value="Submit"><br><br><br><br>
         </div>
     </div>
                
-
+    <div id="thank">
+        <div id="cover">
+            <h1>THANK YOU</h1>
+            <p>Thank you for your generous gift to ECOLUTIONAD. We are thrilled to have your support. Through your donation we have been able to accomplish reduce CO2 and continue working towards saving our Earth. You truly make the difference for us, and we are extremely grateful!</p>
+            <p onclick="cancel()" id="off">x</p>
+        </div>
+    </div>
 
 
 
@@ -122,5 +127,6 @@
 
 
     <script src="../About/script.js"></script>
+    <script src="../Get Involve/script.js"></script>
 </body>
 </html>

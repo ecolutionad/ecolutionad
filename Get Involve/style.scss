@@ -236,15 +236,16 @@ h4{
             }
         }
 }
-
-
 #fourth{
     padding: 4rem 2rem;
     background-color: $yellow;
 
+    h2{
+        color: $background-color;
+    }
     h3{
         padding-top: 2rem;
-        //color: #ffff;
+        color: $background-color;
     }
     input{
         width: 95%;
@@ -336,6 +337,36 @@ h4{
         }
     }
 
+}
+#thank{
+    #cover{
+        position:fixed;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        background-color: $light-green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        width: 80%;
+        text-align: center;
+    }
+    #off{
+        font-size: 2rem;
+        position: absolute;
+        top: 1rem;
+        right: -12.5rem;
+    }
+    #off:hover{
+        color: $background-color;
+        cursor: pointer;
+    }
+    display: none;
 }
 
 //MAIN

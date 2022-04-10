@@ -309,8 +309,13 @@ h4 {
   background-color: #EBA920;
 }
 
+#fourth h2 {
+  color: #fbfcf5;
+}
+
 #fourth h3 {
   padding-top: 2rem;
+  color: #fbfcf5;
 }
 
 #fourth input {
@@ -412,6 +417,51 @@ h4 {
 
 #form #bottom label {
   padding-top: 5rem !important;
+}
+
+#thank {
+  display: none;
+}
+
+#thank #cover {
+  position: fixed;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: #B6C186;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#thank p {
+  width: 80%;
+  text-align: center;
+}
+
+#thank #off {
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: -12.5rem;
+}
+
+#thank #off:hover {
+  color: #fbfcf5;
+  cursor: pointer;
 }
 
 #footer {

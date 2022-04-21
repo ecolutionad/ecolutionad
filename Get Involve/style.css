@@ -336,6 +336,15 @@ h4 {
   color: #31387A;
   height: 3rem;
   border-radius: 25px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#fourth #send:hover {
+  cursor: pointer;
+  background-color: #AE8BDD;
+  color: #31387A;
+  border: none;
 }
 
 #form {

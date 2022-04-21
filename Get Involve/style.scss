@@ -264,7 +264,14 @@ h4{
         color: $purple;
         height: 3rem;
         border-radius: 25px;
+        transition-duration: 0.4s;
         //align-items: center;
+    }
+    #send:hover{
+        cursor: pointer;
+        background-color: $light-purple;
+        color: $purple;
+        border: none;
     }
 }
 #form{

@@ -258,14 +258,17 @@ h4{
         border-color: 5px solid $normal-green;
     }
     #send{
-        width: 100%;
+        font-size: $normal-font;
+        width: 99%;
         background-color: transparent;
         border: 1.5px solid $purple;
         color: $purple;
         height: 3rem;
         border-radius: 25px;
         transition-duration: 0.4s;
-        //align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #send:hover{
         cursor: pointer;
@@ -276,11 +279,13 @@ h4{
 }
 #form{
     //padding: 2rem 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    #outside{
+        width: 80%;
+    }
     .cover{
         width: 100%;
         label{
@@ -346,18 +351,25 @@ h4{
 
 }
 #thank{
-    #cover{
-        position:fixed;
-        height: 80%;
+    position: relative;
+    position:fixed;
+        height: 75%;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -40%);
         width: 80%;
         background-color: $light-green;
+        display: flex;
+        align-items: center;
+    #cover{
+        //position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        height: 100%;
+        //background-color: black;
     }
     p{
         width: 80%;
@@ -365,9 +377,11 @@ h4{
     }
     #off{
         font-size: 2rem;
+        color: $dark-green;
         position: absolute;
         top: 1rem;
-        right: -12.5rem;
+        right: 1rem;
+        z-index: 2;
     }
     #off:hover{
         color: $background-color;
@@ -456,7 +470,6 @@ h4{
             }
         }
     }
-
     #fourth{
         display: flex;
         flex-direction: column;
@@ -467,12 +480,19 @@ h4{
         #cover{
             width: 35rem;
         }
-    }
-    #form{
-        #cover{
-            width: 35rem !important;
+        #send{
+            font-size: $normal-font !important;
         }
     }
+    #form{
+        #outside{
+            width: 35rem !important;
+        }
+        #send{
+            font-size: $normal-font !important;
+        }
+    }
+
 }
 
 @media only screen and (min-width: 850px) {
@@ -574,6 +594,12 @@ h4{
     #form{
         align-items: flex-start;
         padding-left: 10%;
+        #send{
+            font-size: $normal-font !important;
+        }
+    }
+    #thank{
+        width: 50rem !important;
     }
 }
 

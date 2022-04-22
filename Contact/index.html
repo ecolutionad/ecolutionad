@@ -99,7 +99,7 @@
     
         <div id="fourth">
             <div id="cover">
-                <form action="/action_page.php">
+                <form>
                     <label for="fname">FIRST NAME *</label><br><br>
                     <input type="text" id="fname" name="fname"><br><br><br>
                     <label for="lname">LAST NAME *</label><br><br>
@@ -108,11 +108,18 @@
                     <input type="text" id="email" namell="email"><br><br><br>
                     <label for="comment">COMMENTS *</label><br><br>
                     <textarea name="message" rows="10" cols="10"></textarea><br><br><br>
-                    <input id="send" type="submit" value="Send">
+                    <div onclick="submit()" id="send">Sign Up</div>
                 </form>
             </div>
         </div>
 
+        <div id="thank">
+                <div id="cover">
+                    <h1>SUCCESSFULLY!</h1>
+                    <p>Your message is successfully be delivered to our email. We will get back to you as soon as possible!</p>
+                </div>
+                <div onclick="cancel()" id="off">x</div>
+        </div>
         <div id="footer">
             <div id="left">
                 <ul id="text">
@@ -137,5 +144,6 @@
     
         </div>
     <script src="../navbar.js"></script>
+    <script src="../Get Involve/script.js"></script>
 </body>
 </html>

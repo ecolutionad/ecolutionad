@@ -269,6 +269,16 @@ h4 {
 }
 
 #fourth #send {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 99%;
   background-color: transparent;
   border: 1.5px solid #547932;
@@ -284,6 +294,62 @@ h4 {
   background-color: #547932;
   color: #B6C186;
   border: none;
+}
+
+#thank {
+  position: relative;
+  position: fixed;
+  height: 75%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+  width: 80%;
+  background-color: #B6C186;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+#thank #cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#thank p {
+  width: 80%;
+  text-align: center;
+}
+
+#thank #off {
+  font-size: 2rem;
+  color: #2F4B14;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+#thank #off:hover {
+  color: #fbfcf5;
+  cursor: pointer;
 }
 
 #footer {
@@ -367,6 +433,9 @@ h4 {
   #third #cover, #fourth #cover {
     width: 35rem !important;
   }
+  #third #send, #fourth #send {
+    font-size: 1.1rem !important;
+  }
 }
 
 @media only screen and (min-width: 850px) {
@@ -442,6 +511,12 @@ h4 {
         -ms-flex-align: start;
             align-items: flex-start;
     padding-left: 10%;
+  }
+  #third #send, #fourth #send {
+    font-size: 1.2rem !important;
+  }
+  #thank {
+    width: 50rem !important;
   }
 }
 
